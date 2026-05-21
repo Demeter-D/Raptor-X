@@ -1,0 +1,3435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Raptor X 30T — Operator Safety Briefing &amp; Instruction Manual</title>
+<meta name="description" content="Operator safety briefing and full instruction manual for the Raptor X 30-tonne vertical log splitter. PTO-driven, splits logs up to 110 cm. 22-page hazard, PPE, procedure and maintenance reference." />
+
+<!-- PWA / mobile install -->
+<meta name="theme-color" content="#1a1814" />
+<link rel="manifest" href="manifest.manual.json" />
+<link rel="icon" type="image/png" sizes="16x16" href="manual-icons/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="manual-icons/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="manual-icons/icon-192.png" />
+
+<!-- iOS home-screen install -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Raptor X Manual" />
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" href="manual-icons/apple-touch-icon.png" />
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://demeter-d.github.io/Raptor-X/Raptor%20X%2030T%20-%20Operator%20Manual.html" />
+<meta property="og:title" content="Raptor X 30T — Operator Safety Briefing &amp; Instruction Manual" />
+<meta property="og:description" content="22-page operator manual for the Raptor X 30-tonne vertical log splitter — hazards, PPE, procedure, zones, maintenance." />
+<meta property="og:image" content="https://demeter-d.github.io/Raptor-X/manual-icons/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Raptor X 30-tonne vertical log splitter cover plate — operator manual, 30 t splitting force, 110 cm max log, 540 rpm PTO, CAT 1 hitch." />
+<meta property="og:site_name" content="Raptor X · Heavy Plant" />
+<meta property="og:locale" content="en_GB" />
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Raptor X 30T — Operator Safety Briefing &amp; Instruction Manual" />
+<meta name="twitter:description" content="22-page operator manual: hazards, PPE, procedure, zones, maintenance." />
+<meta name="twitter:image" content="https://demeter-d.github.io/Raptor-X/manual-icons/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --paper-edge: #eee7d5;
+    --ink: #1a1814;
+    --ink-soft: #514a3f;
+    --ink-mute: #8a8170;
+    --rule: #1a1814;
+    --rule-soft: #c9c0a8;
+    --accent: #d9531e;        /* hazard orange */
+    --danger: #c8102e;
+    --warning: #f26522;
+    --caution: #ffd000;
+    --notice: #0067b1;
+    --safety: #00843d;
+    --grid-tint: rgba(26,24,20,0.04);
+
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --page-px: 18mm;
+    --page-py: 16mm;
+    --body-size: 10.4pt;
+    --scale: 1;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #2a261f;
+    color: var(--ink);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: var(--body-size);
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8mm;
+    padding: 8mm 0 16mm;
+  }
+
+  /* PAGE */
+  .page {
+    position: relative;
+    width: var(--page-w);
+    min-height: var(--page-h);
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 1px 1px, var(--grid-tint) 1px, transparent 0);
+    background-size: 4mm 4mm;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.35), 0 1px 0 rgba(0,0,0,0.15);
+    padding: var(--page-py) var(--page-px);
+    color: var(--ink);
+    overflow: hidden;
+    font-feature-settings: "ss01","cv11";
+  }
+  .page::before {
+    /* paper edge feel */
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+  }
+
+  /* page header strip */
+  .page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 3mm;
+    margin-bottom: 7mm;
+    gap: 6mm;
+  }
+  .page-head .brand {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  a.brand {
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    padding: 2px 6px 2px 0;
+    margin-left: -2px;
+    border-radius: 3px;
+    transition: color 0.15s, background 0.15s;
+    cursor: pointer;
+  }
+  a.brand:hover {
+    color: var(--accent);
+    background: rgba(217,83,30,0.06);
+  }
+  a.brand:hover .dot { background: var(--ink); }
+  a.brand::after {
+    content: "↑";
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--ink-mute);
+    margin-left: 6px;
+    opacity: 0;
+    transition: opacity 0.15s, color 0.15s;
+  }
+  a.brand:hover::after {
+    opacity: 1;
+    color: var(--accent);
+  }
+  @media (max-width: 820px) {
+    a.brand::after { display: none; }
+  }
+  @media print {
+    a.brand { color: var(--ink) !important; }
+    a.brand::after { display: none !important; }
+  }
+  .page-head .brand .dot {
+    display: inline-block; width: 7px; height: 7px;
+    background: var(--accent);
+    margin: 0 6px 1.5px 2px;
+    vertical-align: middle;
+  }
+  .page-head .ref {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* page footer strip */
+  .page-foot {
+    position: absolute;
+    left: var(--page-px); right: var(--page-px);
+    bottom: 10mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-top: 0.5px solid var(--rule-soft);
+    padding-top: 2mm;
+  }
+  .page-foot .pg {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 10pt;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+  }
+
+  /* TYPE */
+  h1, h2, h3, h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+  h1 { font-size: 40pt; }
+  h2 { font-size: 22pt; letter-spacing: -0.01em; }
+  h3 {
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 6mm 0 2mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 1px solid var(--ink);
+  }
+  h3:first-child { margin-top: 0; }
+  h4 {
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 4mm 0 1.5mm;
+  }
+  p { margin: 0 0 2.5mm; text-wrap: pretty; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  ul li, ol li { margin-bottom: 1mm; }
+  ul.tight li, ol.tight li { margin-bottom: 0.4mm; }
+  ul.check { list-style: none; padding-left: 0; }
+  ul.check li {
+    padding-left: 7mm;
+    position: relative;
+    margin-bottom: 1.5mm;
+  }
+  ul.check li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 1.3mm;
+    width: 4mm; height: 4mm;
+    border: 1.5px solid var(--ink);
+    background: transparent;
+  }
+  strong { font-weight: 700; }
+  em { font-style: italic; color: var(--ink-soft); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .small { font-size: 8.5pt; }
+  .tiny { font-size: 7.5pt; letter-spacing: 0.03em; }
+
+  /* eyebrows */
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-bottom: 2mm;
+  }
+  .eyebrow .bar {
+    display: inline-block;
+    width: 10mm; height: 1px;
+    background: var(--ink);
+    vertical-align: middle;
+    margin-right: 3mm;
+    margin-bottom: 1.2mm;
+  }
+
+  /* COVER */
+  .cover {
+    padding: var(--page-py) var(--page-px);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 6mm;
+    background-color: var(--paper);
+    background-image:
+      radial-gradient(circle at 1px 1px, var(--grid-tint) 1px, transparent 0),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper) 70%, var(--paper-edge) 100%);
+    background-size: 4mm 4mm, cover;
+  }
+  .cover-main {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 8mm;
+    align-items: stretch;
+  }
+  .cover-hero {
+    position: relative;
+    background: #1a1814;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 175mm;
+  }
+  .cover-hero::before {
+    /* spec corner bracket top-left */
+    content: "";
+    position: absolute;
+    top: 4mm; left: 4mm;
+    width: 10mm; height: 10mm;
+    border-top: 1.5px solid var(--accent);
+    border-left: 1.5px solid var(--accent);
+    z-index: 2;
+  }
+  .cover-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 4mm; right: 4mm;
+    width: 10mm; height: 10mm;
+    border-bottom: 1.5px solid var(--accent);
+    border-right: 1.5px solid var(--accent);
+    z-index: 2;
+  }
+  .cover-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .cover-hero .badge {
+    position: absolute;
+    bottom: 0; left: 0;
+    background: var(--accent);
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 9pt;
+    padding: 3mm 5mm 3mm 4mm;
+    line-height: 1.1;
+    z-index: 2;
+  }
+  .cover-hero .badge small {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 1mm;
+  }
+  .cover-hero .tape {
+    position: absolute;
+    top: 0; right: 0;
+    width: 18mm; height: 100%;
+    background:
+      repeating-linear-gradient(135deg,
+        #1a1814 0, #1a1814 6mm,
+        #f4c200 6mm, #f4c200 12mm);
+    z-index: 1;
+    opacity: 0.92;
+  }
+  .cover-h1 {
+    font-size: 42pt;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin-bottom: 5mm;
+    text-wrap: balance;
+  }
+  .cover-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6mm;
+  }
+  .cover-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 4mm;
+  }
+  .cover-mark {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 22pt;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .cover-mark .x {
+    color: var(--accent);
+    font-style: italic;
+    padding-left: 2px;
+  }
+  .cover-mark .sub {
+    display: block;
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: var(--ink-soft);
+    margin-top: 1mm;
+  }
+  .cover-meta {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    line-height: 1.55;
+  }
+  .cover-title-block {
+    align-self: end;
+  }
+  .cover-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6mm;
+  }
+  .cover h1 {
+    font-size: 78pt;
+    line-height: 0.86;
+    letter-spacing: -0.025em;
+  }
+  .cover h1 .accent { color: var(--accent); }
+  .cover-lede {
+    font-size: 12.5pt;
+    line-height: 1.35;
+    margin-top: 6mm;
+    max-width: 130mm;
+    font-weight: 500;
+  }
+  .cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+    margin-top: 4mm;
+  }
+  .cover-stats .s {
+    padding: 4mm 3mm 4mm 0;
+    border-right: 1px solid var(--rule-soft);
+  }
+  .cover-stats .s:last-child { border-right: 0; padding-right: 0; }
+  .cover-stats .v {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 22pt;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .cover-stats .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 2mm;
+  }
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 8mm;
+  }
+  .cover-warning {
+    border: 2px solid var(--danger);
+    padding: 4mm 5mm;
+    background: var(--paper);
+    max-width: 120mm;
+    flex: 1;
+  }
+  .cover-warning .signal {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    color: var(--danger);
+    font-size: 14pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1.5mm;
+  }
+  .cover-warning p { margin: 0; font-size: 9pt; line-height: 1.35; }
+  .cover-doc-block {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    text-align: right;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .cover-doc-block strong { color: var(--ink); font-weight: 700; }
+
+  /* PRINT WATERMARK */
+  .watermark {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 5;
+  }
+  body.watermarked .watermark { display: flex; }
+  .watermark span {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 140pt;
+    color: rgba(200, 16, 46, 0.07);
+    letter-spacing: 0.04em;
+    transform: rotate(-28deg);
+  }
+
+  /* SAFETY CALLOUTS — ANSI Z535 style */
+  .alert {
+    display: grid;
+    grid-template-columns: 32mm 1fr;
+    border: 2px solid var(--ink);
+    margin: 3mm 0 4mm;
+    background: var(--paper);
+    page-break-inside: avoid;
+  }
+  .alert .signal {
+    background: var(--ink);
+    color: #fff;
+    padding: 3mm 3mm 3mm 4mm;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 14pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    gap: 1mm;
+  }
+  .alert .signal .icon {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .alert .body {
+    padding: 3mm 4mm;
+    font-size: 9.5pt;
+    line-height: 1.42;
+  }
+  .alert .body p:last-child { margin-bottom: 0; }
+  .alert .body strong { text-transform: uppercase; letter-spacing: 0.02em; }
+
+  .alert.danger { border-color: var(--danger); }
+  .alert.danger .signal { background: var(--danger); }
+  .alert.warning { border-color: var(--warning); }
+  .alert.warning .signal { background: var(--warning); color: #1a1814; }
+  .alert.caution { border-color: var(--caution); }
+  .alert.caution .signal { background: var(--caution); color: #1a1814; }
+  .alert.notice { border-color: var(--notice); }
+  .alert.notice .signal { background: var(--notice); }
+  .alert.safety { border-color: var(--safety); }
+  .alert.safety .signal { background: var(--safety); }
+
+  /* LAYOUTS */
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; }
+  .cols-asym { display: grid; grid-template-columns: 1.3fr 1fr; gap: 6mm; }
+  .cols-asym-r { display: grid; grid-template-columns: 1fr 1.3fr; gap: 6mm; }
+
+  /* SPEC TABLE */
+  table.spec {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+  }
+  table.spec th, table.spec td {
+    text-align: left;
+    padding: 2mm 3mm;
+    border-bottom: 0.75px solid var(--rule-soft);
+    vertical-align: top;
+  }
+  table.spec tr:last-child td { border-bottom: 1.5px solid var(--ink); }
+  table.spec th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    width: 50%;
+    font-weight: 500;
+  }
+  table.spec td {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    font-weight: 500;
+  }
+  table.spec td.val { font-weight: 700; }
+
+  /* PROCEDURE STEPS */
+  ol.steps {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  ol.steps > li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 14mm;
+    padding-bottom: 3mm;
+    margin-bottom: 3mm;
+    border-bottom: 0.5px dashed var(--rule-soft);
+    min-height: 11mm;
+  }
+  ol.steps > li:last-child { border-bottom: 0; margin-bottom: 0; }
+  ol.steps > li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0; top: -1mm;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 22pt;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  ol.steps .step-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 1mm;
+    line-height: 1.1;
+  }
+  ol.steps .step-body { font-size: 9.5pt; line-height: 1.42; }
+  ol.steps .step-body p { margin-bottom: 1mm; }
+
+  /* HAZARD CHIPS / SYMBOL CARDS */
+  .symbol-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3mm 5mm;
+  }
+  .sym {
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    gap: 4mm;
+    border: 1px solid var(--ink);
+    padding: 3mm;
+    align-items: stretch;
+    page-break-inside: avoid;
+  }
+  .sym .glyph {
+    background: var(--caution);
+    border: 1.5px solid var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    color: var(--ink);
+    font-size: 26pt;
+    line-height: 1;
+    min-height: 22mm;
+    position: relative;
+  }
+  .sym .glyph.tri {
+    background: transparent;
+    border: 0;
+  }
+  .sym .glyph .triangle {
+    width: 0; height: 0;
+    border-left: 11mm solid transparent;
+    border-right: 11mm solid transparent;
+    border-bottom: 19mm solid var(--caution);
+    position: relative;
+    filter: drop-shadow(0 0 0 var(--ink));
+  }
+  .sym .glyph .triangle::after {
+    content: attr(data-mark);
+    position: absolute;
+    top: 8mm;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    color: var(--ink);
+    font-size: 16pt;
+  }
+  .sym .glyph.round {
+    border-radius: 999px;
+    background: var(--notice);
+    color: #fff;
+    border-color: var(--notice);
+  }
+  .sym .glyph.no {
+    background: #fff;
+    border-radius: 999px;
+    border: 2.5px solid var(--danger);
+    color: var(--danger);
+    position: relative;
+    overflow: hidden;
+  }
+  .sym .glyph.no::after {
+    content: "";
+    position: absolute;
+    width: 140%; height: 2.5mm;
+    background: var(--danger);
+    transform: rotate(-45deg);
+    left: -20%;
+    top: calc(50% - 1.25mm);
+  }
+  .sym .meta { display: flex; flex-direction: column; justify-content: center; }
+  .sym h4 { margin: 0 0 1mm; font-size: 9.5pt; }
+  .sym p { margin: 0; font-size: 8.5pt; line-height: 1.35; color: var(--ink-soft); }
+
+  /* PPE LIST */
+  .ppe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3mm;
+  }
+  .ppe-item {
+    border: 1px solid var(--ink);
+    padding: 3mm;
+    background: var(--paper);
+    display: flex; gap: 3mm; align-items: flex-start;
+  }
+  .ppe-item .num {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 18pt;
+    line-height: 1;
+    color: var(--accent);
+  }
+  .ppe-item .lbl {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9.5pt;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+  }
+  .ppe-item .desc { font-size: 8pt; color: var(--ink-soft); margin-top: 1mm; line-height: 1.35; }
+
+  /* MACHINE PHOTO with callouts */
+  .machine-photo {
+    position: relative;
+    margin: 4mm 0 5mm;
+    border: 1.5px solid var(--ink);
+    background: #1a1814;
+    height: 110mm;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .machine-photo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .machine-photo .callout {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 1mm 2mm;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+    box-shadow: 0 1mm 2mm rgba(0,0,0,0.25);
+  }
+  .machine-photo .callout .n {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5mm 1.5mm;
+    margin-right: 1.5mm;
+    border-radius: 1px;
+  }
+  /* Callout positions tuned for the supplied photo */
+  .machine-photo .c-01 { top: 4mm;   left: 50%; transform: translateX(-90%); }
+  .machine-photo .c-02 { top: 16mm;  left: 6mm; }
+  .machine-photo .c-03 { top: 30mm;  right: 6mm; }
+  .machine-photo .c-04 { top: 44mm;  left: 6mm; }
+  .machine-photo .c-05 { top: 58mm;  right: 6mm; }
+  .machine-photo .c-06 { top: 72mm;  left: 6mm; }
+  .machine-photo .c-07 { top: 72mm;  right: 6mm; }
+  .machine-photo .c-08 { bottom: 4mm; left: 50%; transform: translateX(-50%); }
+  .machine-photo .c-09 { bottom: 18mm; left: 6mm; }
+  .machine-photo .c-10 { bottom: 4mm; right: 6mm; }
+
+  /* DIAGRAM placeholder — labelled box */
+  .diagram {
+    border: 1.5px solid var(--ink);
+    background:
+      repeating-linear-gradient(135deg,
+        var(--paper) 0,
+        var(--paper) 6px,
+        rgba(26,24,20,0.04) 6px,
+        rgba(26,24,20,0.04) 12px);
+    min-height: 95mm;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .diagram .placeholder {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    color: var(--ink-soft);
+    background: var(--paper);
+    padding: 2mm 3mm;
+    border: 1px dashed var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+  .diagram .callout {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 1mm 2mm;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .diagram .callout .n {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5mm 1.5mm;
+    margin-right: 1.5mm;
+    border-radius: 1px;
+  }
+
+  /* TOC */
+  .toc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1mm 8mm;
+    column-rule: 0.5px solid var(--rule-soft);
+  }
+  .toc-item {
+    display: flex; align-items: baseline;
+    border-bottom: 0.5px dotted var(--rule-soft);
+    padding: 1.5mm 0;
+    font-size: 10pt;
+    gap: 2mm;
+  }
+  .toc-item .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 8.5pt;
+    color: var(--accent);
+    width: 7mm;
+    flex-shrink: 0;
+  }
+  .toc-item .t {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    flex: 1;
+    line-height: 1.15;
+  }
+  .toc-item .p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    color: var(--ink-soft);
+    margin-left: auto;
+  }
+  .toc-section {
+    grid-column: 1 / -1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 3mm;
+    padding-bottom: 1mm;
+    border-bottom: 1px solid var(--ink);
+  }
+  .toc-section:first-child { margin-top: 0; }
+
+  /* CHECKLIST */
+  .checklist {
+    border: 1.5px solid var(--ink);
+    padding: 4mm 5mm;
+    background: var(--paper);
+  }
+  .checklist h4 { margin-top: 0; }
+  .checklist-row {
+    display: grid;
+    grid-template-columns: 8mm 1fr 30mm;
+    gap: 3mm;
+    align-items: center;
+    padding: 1.5mm 0;
+    border-bottom: 0.5px dashed var(--rule-soft);
+    font-size: 9.5pt;
+  }
+  .checklist-row:last-child { border-bottom: 0; }
+  .checklist-row .box {
+    width: 5mm; height: 5mm;
+    border: 1.5px solid var(--ink);
+    background: #fff;
+  }
+  .checklist-row .note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--ink-soft);
+    text-align: right;
+  }
+  .signoff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5mm;
+    margin-top: 5mm;
+  }
+  .signoff .field {
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 1mm;
+    min-height: 11mm;
+    display: flex;
+    align-items: flex-end;
+  }
+  .signoff .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+    margin-top: 1.5mm;
+  }
+
+  /* HAZARD ZONES diagram */
+  .zone-diagram {
+    border: 1.5px solid var(--ink);
+    height: 75mm;
+    position: relative;
+    background:
+      radial-gradient(ellipse at center,
+        rgba(200,16,46,0.18) 0%,
+        rgba(200,16,46,0.18) 18%,
+        rgba(242,101,34,0.16) 18%,
+        rgba(242,101,34,0.16) 38%,
+        rgba(255,208,0,0.16) 38%,
+        rgba(255,208,0,0.16) 65%,
+        rgba(0,132,61,0.12) 65%,
+        rgba(0,132,61,0.12) 100%);
+    overflow: hidden;
+  }
+  .zone-diagram .center-mark {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 14mm; height: 14mm;
+    border: 1.5px solid var(--ink);
+    background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .zone-diagram .zone-label {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 1mm 2mm;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.05;
+  }
+  .zone-diagram .zone-label .n {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 700;
+    padding: 0.3mm 1.5mm;
+    margin-right: 1.5mm;
+  }
+  .zone-diagram .zone-label.danger .n { background: var(--danger); }
+  .zone-diagram .zone-label.warning .n { background: var(--warning); color: var(--ink); }
+  .zone-diagram .zone-label.caution .n { background: var(--caution); color: var(--ink); }
+  .zone-diagram .zone-label.safety .n { background: var(--safety); }
+
+  /* TROUBLE TABLE */
+  table.trouble {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+  }
+  table.trouble thead th {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: left;
+    padding: 2mm 3mm;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  table.trouble tbody td {
+    padding: 2.5mm 3mm;
+    border-bottom: 0.75px solid var(--rule-soft);
+    vertical-align: top;
+  }
+  table.trouble tbody tr:nth-child(even) td { background: rgba(26,24,20,0.03); }
+  table.trouble td:first-child {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 0.02em;
+    width: 38%;
+  }
+
+  /* PILL */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5mm;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1mm 2.5mm;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    background: var(--paper);
+    line-height: 1;
+  }
+  .pill.accent { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .pill.danger { background: var(--danger); color: #fff; border-color: var(--danger); }
+
+  /* QUICK REF CARD */
+  .card-tear {
+    border: 2px dashed var(--ink-soft);
+    padding: 5mm 6mm;
+    background: var(--paper);
+    position: relative;
+  }
+  .card-tear::before {
+    content: "✂ TEAR OFF";
+    position: absolute;
+    top: -3.5mm;
+    left: 6mm;
+    background: var(--paper);
+    padding: 0 2mm;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+
+  /* DENSITY */
+  body.density-compact {
+    --body-size: 9.6pt;
+    --page-py: 13mm;
+    --page-px: 15mm;
+  }
+  body.density-compact h3 { margin: 4mm 0 1.5mm; }
+  body.density-compact ol.steps > li { padding-bottom: 2mm; margin-bottom: 2mm; }
+
+  /* TWEAKS UI placement */
+  .tweak-toolbar {
+    position: fixed;
+    right: 16px; bottom: 16px;
+    z-index: 50;
+  }
+
+  /* ================== MOBILE ================== */
+  @media (max-width: 820px) {
+    :root {
+      --page-w: 100%;
+      --page-h: auto;
+      --page-px: 18px;
+      --page-py: 22px;
+      --body-size: 15px;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: #1a1814;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .doc {
+      padding: 0;
+      gap: 0;
+    }
+    .page {
+      width: 100%;
+      max-width: 100vw;
+      min-height: auto;
+      box-shadow: none;
+      background-image: none;
+      padding: 22px 18px 60px;
+      border-top: 6px solid var(--accent);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      overflow: visible;
+      font-size: 15px;
+    }
+    .page + .page { margin-top: 8px; }
+
+    /* Headings rescaled */
+    h1 { font-size: 32px; line-height: 1.05; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 16px; margin: 22px 0 10px; padding-bottom: 6px; }
+    h4 { font-size: 14px; margin: 14px 0 6px; }
+    p { margin: 0 0 10px; }
+    .small { font-size: 13px; }
+    .tiny { font-size: 12px; }
+    .lede { font-size: 16px; max-width: 100%; margin-bottom: 16px; }
+    .eyebrow { font-size: 11px; margin-bottom: 8px; }
+    .eyebrow .bar { width: 24px; }
+
+    /* Page chrome */
+    .page-head {
+      flex-wrap: wrap;
+      gap: 6px;
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+    }
+    .page-head .brand { font-size: 14px; }
+    .page-head .ref { font-size: 10px; }
+    .page-foot {
+      position: static;
+      left: auto; right: auto; bottom: auto;
+      margin-top: 24px;
+      padding-top: 8px;
+      font-size: 10px;
+    }
+    .page-foot .pg { font-size: 13px; }
+    .watermark { display: none !important; }
+
+    /* COVER */
+    .cover {
+      padding: 22px 18px 40px;
+      background-color: var(--paper);
+      background-image: none;
+    }
+    .cover-top {
+      flex-wrap: wrap;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .cover-mark { font-size: 18px; }
+    .cover-mark .sub { font-size: 10px; }
+    .cover-meta {
+      text-align: left;
+      font-size: 10px;
+      width: 100%;
+      margin-top: 6px;
+    }
+    .cover-main {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .cover-hero {
+      min-height: 280px;
+      max-height: 60vh;
+    }
+    .cover-hero::before, .cover-hero::after {
+      width: 20px; height: 20px;
+    }
+    .cover-hero .badge {
+      font-size: 11px;
+      padding: 8px 10px;
+    }
+    .cover-hero .badge small {
+      font-size: 9px;
+    }
+    .cover-hero .tape { width: 28px; }
+    .cover-eyebrow { font-size: 11px; margin-bottom: 14px; }
+    .cover-h1, .cover h1 {
+      font-size: 36px !important;
+      line-height: 0.95 !important;
+    }
+    .cover-lede {
+      font-size: 15px !important;
+      margin-top: 14px;
+    }
+    .cover-stats {
+      grid-template-columns: 1fr 1fr !important;
+      margin-top: 8px;
+    }
+    .cover-stats .s {
+      padding: 12px 8px 12px 0;
+      border-right: 1px solid var(--rule-soft);
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .cover-stats .s:nth-child(2n) { border-right: 0; padding-right: 0; }
+    .cover-stats .s:nth-last-child(-n+2) { border-bottom: 0; }
+    .cover-stats .v { font-size: 22px; }
+    .cover-stats .l { font-size: 9px; }
+    .cover-bottom {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .cover-warning {
+      max-width: 100%;
+    }
+    .cover-warning .signal { font-size: 14px; }
+    .cover-warning p { font-size: 13px; }
+    .cover-doc-block {
+      text-align: left;
+      font-size: 11px;
+    }
+
+    /* Multi-column layouts → stack */
+    .cols-2,
+    .cols-3,
+    .cols-asym,
+    .cols-asym-r {
+      grid-template-columns: 1fr !important;
+      gap: 16px;
+    }
+
+    /* TOC → single column */
+    .toc {
+      grid-template-columns: 1fr;
+      gap: 0;
+      column-rule: none;
+    }
+    .toc-item { font-size: 14px; padding: 8px 0; gap: 8px; }
+    .toc-item .n { font-size: 11px; width: 24px; }
+    .toc-item .p { font-size: 11px; }
+    .toc-section { font-size: 11px; margin-top: 16px; }
+
+    /* Alerts */
+    .alert {
+      grid-template-columns: 1fr;
+      margin: 12px 0 14px;
+    }
+    .alert .signal {
+      padding: 8px 12px;
+      font-size: 14px;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .alert .signal .icon { font-size: 10px; }
+    .alert .body { padding: 10px 12px; font-size: 14px; }
+
+    /* PPE / Symbol grids */
+    .ppe,
+    .symbol-grid {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .sym {
+      grid-template-columns: 60px 1fr;
+      padding: 10px;
+      gap: 12px;
+    }
+    .sym .glyph { min-height: 60px; font-size: 22px; }
+    .sym .glyph .triangle {
+      border-left-width: 28px;
+      border-right-width: 28px;
+      border-bottom-width: 48px;
+    }
+    .sym .glyph .triangle::after {
+      top: 18px; font-size: 14px;
+    }
+    .sym h4 { font-size: 14px; }
+    .sym p { font-size: 12px; }
+    .ppe-item .num { font-size: 26px; }
+    .ppe-item .lbl { font-size: 14px; }
+    .ppe-item .desc { font-size: 12px; }
+
+    /* Spec / trouble tables → fluid, scrollable when needed */
+    table.spec, table.trouble {
+      font-size: 13px;
+    }
+    table.spec th, table.spec td,
+    table.trouble thead th, table.trouble tbody td {
+      padding: 8px 10px;
+    }
+    table.spec th { font-size: 10px; }
+    table.spec td { font-size: 13px; }
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 -18px;
+      padding: 0 18px;
+    }
+
+    /* Machine photo + callouts */
+    .machine-photo {
+      height: 320px;
+    }
+    .machine-photo .callout {
+      font-size: 10px;
+      padding: 4px 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .machine-photo .callout .n {
+      padding: 1px 4px;
+      margin-right: 4px;
+    }
+
+    /* Diagrams */
+    .diagram { min-height: 220px; }
+    .diagram .placeholder { font-size: 11px; }
+    .zone-diagram { height: 240px; }
+    .zone-diagram .zone-label {
+      font-size: 10px;
+      padding: 3px 6px;
+    }
+    .zone-diagram .center-mark {
+      width: 70px; height: 70px;
+      font-size: 10px;
+    }
+
+    /* Procedure steps */
+    ol.steps > li {
+      padding-left: 48px;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      min-height: 0;
+    }
+    ol.steps > li::before {
+      font-size: 30px;
+      top: -2px;
+    }
+    ol.steps .step-title { font-size: 15px; }
+    ol.steps .step-body { font-size: 14px; }
+
+    /* Checklist */
+    .checklist { padding: 16px; }
+    .checklist-row {
+      grid-template-columns: 24px 1fr;
+      font-size: 14px;
+      padding: 8px 0;
+    }
+    .checklist-row .box { width: 18px; height: 18px; }
+    .checklist-row .note { display: none; }
+
+    .signoff {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .signoff .field { min-height: 32px; }
+
+    /* Quick-ref card */
+    .card-tear { padding: 16px; }
+    .card-tear::before { font-size: 10px; }
+
+    /* Toolbars — keep reachable, smaller, non-blocking */
+    .toolbar {
+      left: 12px;
+      bottom: max(12px, calc(env(safe-area-inset-bottom) + 6px));
+    }
+    .toolbar button {
+      padding: 10px 14px;
+      font-size: 12px;
+    }
+    .tweak-toolbar {
+      right: 12px;
+      bottom: max(12px, calc(env(safe-area-inset-bottom) + 6px));
+    }
+  }
+
+  @media (max-width: 480px) {
+    :root { --body-size: 14.5px; }
+    .cover-h1, .cover h1 { font-size: 30px !important; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 21px; }
+    .cover-stats .v { font-size: 18px; }
+    .machine-photo { height: 260px; }
+  }
+
+  /* Print */
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; }
+    .doc { padding: 0; gap: 0; }
+    .page {
+      box-shadow: none;
+      page-break-after: always;
+      min-height: var(--page-h);
+      background-image: none;
+    }
+    .tweak-toolbar, .toolbar { display: none !important; }
+  }
+
+  /* Screen-only toolbar (print button) */
+  .toolbar {
+    position: fixed;
+    left: 16px; bottom: 16px;
+    left: max(16px, env(safe-area-inset-left));
+    bottom: max(16px, calc(env(safe-area-inset-bottom) + 8px));
+    z-index: 50;
+    display: flex;
+    gap: 8px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  .toolbar button {
+    background: var(--ink);
+    color: var(--paper);
+    border: 0;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .toolbar button:hover { background: var(--accent); }
+
+  /* Accent variants set by Tweaks */
+  body.accent-orange { --accent: #d9531e; }
+  body.accent-yellow { --accent: #e6a800; }
+  body.accent-blue   { --accent: #0067b1; }
+  body.accent-red    { --accent: #c8102e; }
+
+  /* ================== HAMBURGER NAVIGATION ================== */
+  .nav-toggle {
+    position: fixed;
+    top: 14px; right: 14px;
+    top: max(14px, calc(env(safe-area-inset-top) + 8px));
+    right: max(14px, env(safe-area-inset-right));
+    z-index: 60;
+    width: 46px; height: 46px;
+    background: var(--ink);
+    color: var(--paper);
+    border: 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    transition: background 0.15s;
+    padding: 0;
+  }
+  .nav-toggle:hover { background: var(--accent); }
+  .nav-toggle .bar {
+    display: block;
+    width: 20px; height: 2px;
+    background: var(--paper);
+    border-radius: 1px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  body.nav-open .nav-toggle .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  body.nav-open .nav-toggle .bar:nth-child(2) { opacity: 0; }
+  body.nav-open .nav-toggle .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,24,20,0.5);
+    z-index: 55;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
+
+  .nav-panel {
+    position: fixed;
+    top: 0; right: 0;
+    width: min(360px, 90vw);
+    height: 100vh;
+    height: 100dvh;
+    background: var(--paper);
+    z-index: 58;
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 0 32px rgba(0,0,0,0.3);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+  }
+  body.nav-open .nav-panel { transform: translateX(0); }
+  .nav-panel-head {
+    padding: 22px 22px 16px;
+    padding-top: max(22px, env(safe-area-inset-top));
+    border-bottom: 1.5px solid var(--ink);
+    flex-shrink: 0;
+  }
+  .nav-panel-head .brand {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+  .nav-panel-head .brand .dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--accent);
+    margin: 0 5px 2px 2px;
+    vertical-align: middle;
+  }
+  .nav-panel-head .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 8px 0 0;
+  }
+  .nav-panel-body {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 0 24px;
+  }
+  .nav-section {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 18px 22px 8px;
+    border-bottom: 1px solid var(--rule-soft);
+    margin-bottom: 4px;
+  }
+  .nav-link {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 11px 22px;
+    text-decoration: none;
+    color: var(--ink);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: background 0.15s;
+  }
+  .nav-link:hover, .nav-link:active { background: rgba(217,83,30,0.08); }
+  .nav-link .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    width: 24px;
+    flex-shrink: 0;
+  }
+  .nav-link .t {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+  .nav-link.is-quickref {
+    background: var(--ink);
+    color: var(--paper);
+    margin-top: 8px;
+  }
+  .nav-link.is-quickref:hover, .nav-link.is-quickref:active { background: var(--accent); }
+  .nav-link.is-quickref .n { color: var(--paper); }
+  .nav-link.is-quickref .t { font-weight: 800; }
+
+  @media print {
+    .nav-toggle, .nav-scrim, .nav-panel { display: none !important; }
+  }
+
+  /* Page-specific helpers */
+  .lede {
+    font-size: 12pt;
+    line-height: 1.45;
+    font-weight: 500;
+    margin-bottom: 5mm;
+    max-width: 150mm;
+  }
+  .rule-thick {
+    height: 4px; background: var(--ink); margin: 4mm 0;
+  }
+  .rule-accent {
+    height: 4px; background: var(--accent); margin: 4mm 0;
+  }
+  .hr { height: 1px; background: var(--rule-soft); margin: 4mm 0; }
+</style>
+</head>
+<body class="accent-orange">
+
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#1a1814"/>
+  <rect x="20" y="14" width="60" height="72" fill="#f7f4ec"/>
+  <rect x="20" y="14" width="60" height="6" fill="#d9531e"/>
+  <rect x="26" y="26" width="48" height="3" fill="#1a1814"/>
+  <rect x="26" y="34" width="30" height="2" fill="#8a8170"/>
+  <rect x="26" y="40" width="38" height="2" fill="#8a8170"/>
+  <rect x="26" y="46" width="34" height="2" fill="#8a8170"/>
+  <path d="M50 58 L42 72 L58 72 Z" fill="#ffd000" stroke="#1a1814" stroke-width="1.5"/>
+  <text x="50" y="71" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="9" fill="#1a1814">!</text>
+  <rect x="26" y="78" width="48" height="2" fill="#1a1814"/>
+</svg>
+</template>
+
+<div id="tweaks-root"></div>
+
+<!-- ====================== HAMBURGER NAV ====================== -->
+<button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-controls="nav-panel" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+<div class="nav-scrim" id="nav-scrim"></div>
+<aside class="nav-panel" id="nav-panel" aria-label="Quick navigation">
+  <div class="nav-panel-head">
+    <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Splitter</div>
+    <div class="eyebrow">Quick reference · jump to section</div>
+  </div>
+  <nav class="nav-panel-body" id="nav-panel-body"></nav>
+</aside>
+
+<div class="doc">
+
+  <!-- =================================================================
+       PAGE 01 — COVER
+       ================================================================= -->
+  <section class="page cover" data-screen-label="01 Cover">
+    <div class="watermark"><span>DRAFT</span></div>
+
+    <div class="cover-top">
+      <div class="cover-mark">
+        RAPTOR<span class="x">X</span>
+        <span class="sub">Heavy Plant &middot; Forestry Implements</span>
+      </div>
+      <div class="cover-meta">
+        Doc&nbsp;No.&nbsp;RX-30T-OM-001<br/>
+        Rev.&nbsp;A &middot; Issued&nbsp;05/2026<br/>
+        Language:&nbsp;EN-GB
+      </div>
+    </div>
+
+    <div class="cover-main">
+      <div class="cover-hero">
+        <img src="assets/raptor-x-30t.png" alt="Raptor X 30T vertical log splitter, yellow body, vertical orientation with cylinder fully extended, mounted on 3-point linkage with transport wheel and grey log-handling rails." />
+        <div class="tape"></div>
+        <div class="badge"><small>Fig. 01 &middot; As-built</small>Raptor&nbsp;X 30T &middot; Vertical Log Splitter</div>
+      </div>
+
+      <div class="cover-side">
+        <div>
+          <div class="cover-eyebrow">Operator Safety Briefing &amp; Instruction Manual</div>
+          <h1 class="cover-h1">30-Tonne Vertical Splitter<span class="accent">.</span></h1>
+          <p class="cover-lede" style="max-width: 100%; font-size: 11pt;">
+            PTO-driven heavy-duty vertical splitter with self-contained gear
+            pump and oil tank, manual log lift arm, and transport wheels. Splits
+            logs up to 110&nbsp;cm. Read this manual end-to-end before connecting
+            the implement to any tractor.
+          </p>
+        </div>
+
+        <div class="cover-stats" style="grid-template-columns: 1fr 1fr;">
+          <div class="s"><div class="v">30 t</div><div class="l">Splitting force</div></div>
+          <div class="s"><div class="v">110 cm</div><div class="l">Max log length</div></div>
+          <div class="s"><div class="v">540 rpm</div><div class="l">PTO speed</div></div>
+          <div class="s"><div class="v">CAT&nbsp;1</div><div class="l">3-point hitch</div></div>
+        </div>
+
+        <div class="cover-warning" style="max-width: 100%;">
+          <div class="signal">⚠ Danger — Read Before Use</div>
+          <p>
+            This machine is capable of causing crush, amputation, entanglement
+            and high-pressure fluid-injection injuries. Operation by untrained
+            persons, children, or any person under the influence of drugs,
+            alcohol or fatigue is strictly prohibited.
+          </p>
+        </div>
+
+        <div class="cover-doc-block" style="text-align: left;">
+          <strong>Keep this manual</strong> with the machine at all times.<br/>
+          Replace if damaged or illegible.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 02 — CONTENTS / DOCUMENT CONVENTIONS
+       ================================================================= -->
+  <section class="page" data-screen-label="02 Contents">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 00 — How to read this manual</div>
+    <h2>Contents &amp; signal-word conventions.</h2>
+
+    <div class="cols-asym" style="margin-top: 6mm;">
+      <div>
+        <div class="toc">
+          <div class="toc-section">01 — Orientation</div>
+          <div class="toc-item"><span class="n">01</span><span class="t">Cover &amp; Document Identity</span><span class="p">01</span></div>
+          <div class="toc-item"><span class="n">02</span><span class="t">Contents &amp; Signal Words</span><span class="p">02</span></div>
+          <div class="toc-item"><span class="n">03</span><span class="t">Machine Specification</span><span class="p">03</span></div>
+          <div class="toc-item"><span class="n">04</span><span class="t">Component Identification</span><span class="p">04</span></div>
+
+          <div class="toc-section">02 — Safety</div>
+          <div class="toc-item"><span class="n">05</span><span class="t">Decals &amp; Hazard Symbols</span><span class="p">05</span></div>
+          <div class="toc-item"><span class="n">06</span><span class="t">Personal Protective Equipment</span><span class="p">06</span></div>
+          <div class="toc-item"><span class="n">07</span><span class="t">General Safety Rules</span><span class="p">07</span></div>
+          <div class="toc-item"><span class="n">08</span><span class="t">PTO &amp; Shaft Entanglement</span><span class="p">08</span></div>
+          <div class="toc-item"><span class="n">09</span><span class="t">Hydraulic &amp; Injection Hazards</span><span class="p">09</span></div>
+          <div class="toc-item"><span class="n">10</span><span class="t">Work Area &amp; Operating Zones</span><span class="p">10</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="toc">
+          <div class="toc-section">03 — Setup &amp; Operation</div>
+          <div class="toc-item"><span class="n">11</span><span class="t">Pre-Start Inspection</span><span class="p">11</span></div>
+          <div class="toc-item"><span class="n">12</span><span class="t">Hitching &amp; PTO Connection</span><span class="p">12</span></div>
+          <div class="toc-item"><span class="n">13</span><span class="t">Operating Procedure</span><span class="p">13</span></div>
+          <div class="toc-item"><span class="n">14</span><span class="t">Log Lift &amp; Log Handling</span><span class="p">14</span></div>
+          <div class="toc-item"><span class="n">15</span><span class="t">Shutdown &amp; Disconnection</span><span class="p">15</span></div>
+
+          <div class="toc-section">04 — After Use</div>
+          <div class="toc-item"><span class="n">16</span><span class="t">Transport &amp; Towing</span><span class="p">16</span></div>
+          <div class="toc-item"><span class="n">17</span><span class="t">Maintenance Schedule</span><span class="p">17</span></div>
+          <div class="toc-item"><span class="n">18</span><span class="t">Hydraulic System Service</span><span class="p">18</span></div>
+          <div class="toc-item"><span class="n">19</span><span class="t">Troubleshooting</span><span class="p">19</span></div>
+
+          <div class="toc-section">05 — Records</div>
+          <div class="toc-item"><span class="n">20</span><span class="t">Daily Pre-Start Checklist</span><span class="p">20</span></div>
+          <div class="toc-item"><span class="n">21</span><span class="t">Operator Sign-Off</span><span class="p">21</span></div>
+          <div class="toc-item"><span class="n">22</span><span class="t">Tear-Off Quick Reference</span><span class="p">22</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 10mm;">Signal words used in this manual</h3>
+    <p class="small">Hazard alerts follow the ANSI&nbsp;Z535.6 / ISO&nbsp;3864 colour and structure convention. Read every signal word and the message that follows before acting.</p>
+
+    <div class="alert danger">
+      <div class="signal"><span class="icon">▲ ANSI</span><span>Danger</span></div>
+      <div class="body"><p>Indicates a hazardous situation which, <strong>if not avoided, will result in death or serious injury.</strong> Reserved for the most extreme conditions.</p></div>
+    </div>
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲ ANSI</span><span>Warning</span></div>
+      <div class="body"><p>Indicates a hazardous situation which, <strong>if not avoided, could result in death or serious injury.</strong></p></div>
+    </div>
+    <div class="alert caution">
+      <div class="signal"><span class="icon">▲ ANSI</span><span>Caution</span></div>
+      <div class="body"><p>Indicates a hazardous situation which, <strong>if not avoided, could result in minor or moderate injury.</strong></p></div>
+    </div>
+    <div class="alert notice">
+      <div class="signal"><span class="icon">i NOTICE</span><span>Notice</span></div>
+      <div class="body"><p>Indicates information considered important <strong>but not directly related to a personal-injury hazard</strong> (e.g. machine damage, contamination).</p></div>
+    </div>
+
+    <div class="page-foot">
+      <span>Raptor&nbsp;X &middot; 30T Vertical Log Splitter &middot; Operator Manual</span>
+      <span class="pg">02 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 03 — SPECIFICATIONS
+       ================================================================= -->
+  <section class="page" data-screen-label="03 Specifications">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 03</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 03 — Specification</div>
+    <h2>Technical data &amp; intended use.</h2>
+    <p class="lede">
+      The Raptor&nbsp;X 30T is a vertical-orientation, three-point-hitch-mounted log
+      splitter intended for the production of domestic and small-commercial
+      firewood from previously felled and de-limbed timber. It is <strong>not</strong>
+      designed for stationary industrial milling, for materials other than wood,
+      or for use as a hydraulic press for any other purpose.
+    </p>
+
+    <div class="cols-2">
+      <div>
+        <h4>Splitting system</h4>
+        <table class="spec">
+          <tr><th>Splitting force (max.)</th><td class="val">30 t</td></tr>
+          <tr><th>Operating orientation</th><td class="val">Vertical</td></tr>
+          <tr><th>Max. log length</th><td class="val">1100 mm (110 cm)</td></tr>
+          <tr><th>Wedge height</th><td class="val">approx. 250 mm</td></tr>
+          <tr><th>Cylinder bore × stroke</th><td class="val">130 × 1100 mm</td></tr>
+          <tr><th>Cycle time (fwd / ret)</th><td class="val">≈ 9.5 s / 5.5 s</td></tr>
+          <tr><th>Working pressure</th><td class="val">≤ 250 bar</td></tr>
+        </table>
+
+        <h4>Drive &amp; hydraulics</h4>
+        <table class="spec">
+          <tr><th>Drive type</th><td class="val">Tractor PTO, 540 rpm</td></tr>
+          <tr><th>Min. tractor power</th><td class="val">35 hp (26 kW)</td></tr>
+          <tr><th>Pump type</th><td class="val">Two-stage gear pump (on-board)</td></tr>
+          <tr><th>Reservoir capacity</th><td class="val">approx. 30 L</td></tr>
+          <tr><th>Hydraulic oil grade</th><td class="val">HLP 46 (ISO VG 46)</td></tr>
+          <tr><th>Control valve</th><td class="val">Two-hand, auto-detent return</td></tr>
+        </table>
+      </div>
+
+      <div>
+        <h4>Mounting &amp; transport</h4>
+        <table class="spec">
+          <tr><th>Hitch standard</th><td class="val">3-point linkage, CAT&nbsp;1 pins</td></tr>
+          <tr><th>CAT&nbsp;2 conversion</th><td class="val">Available (bush kit)</td></tr>
+          <tr><th>PTO shaft</th><td class="val">Supplied new, 6-spline 1⅜″</td></tr>
+          <tr><th>Transport wheels</th><td class="val">Fitted, off-tractor moves only</td></tr>
+          <tr><th>Operating mass</th><td class="val">approx. 370 kg</td></tr>
+          <tr><th>Footprint (W × D × H)</th><td class="val">900 × 1100 × 2350 mm</td></tr>
+        </table>
+
+        <h4>Environmental &amp; rating</h4>
+        <table class="spec">
+          <tr><th>Operating temp. range</th><td class="val">−5 °C to +40 °C</td></tr>
+          <tr><th>Noise (LpA, at operator)</th><td class="val">&lt; 85 dB(A) typ.</td></tr>
+          <tr><th>Designed to</th><td class="val">EN 609-1 principles</td></tr>
+          <tr><th>Permitted operators</th><td class="val">One (1) trained adult</td></tr>
+        </table>
+
+        <div class="alert notice" style="margin-top: 4mm;">
+          <div class="signal"><span class="icon">i NOTICE</span><span>Notice</span></div>
+          <div class="body small">
+            Cycle times assume nominal PTO speed (540&nbsp;rpm) and an oil temperature
+            between 30&nbsp;°C and 60&nbsp;°C. Cold oil slows the cycle; allow a 5-minute
+            warm-up cycle below 10&nbsp;°C ambient before splitting under full load.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Intended use — and prohibited use</h3>
+    <div class="cols-2">
+      <div>
+        <p><strong>Intended:</strong></p>
+        <ul class="tight small">
+          <li>Splitting clean, de-limbed firewood logs up to 110&nbsp;cm long.</li>
+          <li>Dry or green softwood and hardwood within the rated force.</li>
+          <li>One operator, on level ground, with the tractor handbrake set.</li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Prohibited:</strong></p>
+        <ul class="tight small">
+          <li>Splitting frozen logs, root-balls or stumps with embedded soil/metal.</li>
+          <li>Use as a hydraulic press, jack or pulling device.</li>
+          <li>Operation by more than one person, or while another person is within 5&nbsp;m.</li>
+          <li>Operation on slopes &gt; 5° or on icy / muddy / loose ground.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Specification &middot; § 03</span>
+      <span class="pg">03 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 04 — COMPONENT IDENTIFICATION
+       ================================================================= -->
+  <section class="page" data-screen-label="04 Components">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 04</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 04 — Component identification</div>
+    <h2>Know your machine.</h2>
+    <p class="small">Before operating, locate each numbered component on the physical machine. If any guard, decal or component listed below is missing, damaged or illegible, <strong>do not operate</strong> the splitter until it is replaced or restored.</p>
+
+    <div class="machine-photo">
+      <img src="assets/raptor-x-30t.png" alt="Raptor X 30T vertical log splitter, with numbered callouts to its main components." />
+      <div class="callout c-01"><span class="n">01</span>Hydraulic ram cylinder</div>
+      <div class="callout c-02"><span class="n">02</span>Hydraulic hose loops</div>
+      <div class="callout c-03"><span class="n">03</span>3-pt hitch top mount</div>
+      <div class="callout c-04"><span class="n">04</span>Splitting wedge</div>
+      <div class="callout c-05"><span class="n">05</span>Two-hand control levers</div>
+      <div class="callout c-06"><span class="n">06</span>Manual log lift arm</div>
+      <div class="callout c-07"><span class="n">07</span>Splash guard / shield</div>
+      <div class="callout c-08"><span class="n">08</span>Splitting bed / base plate</div>
+      <div class="callout c-09"><span class="n">09</span>Transport wheel</div>
+      <div class="callout c-10"><span class="n">10</span>PTO shaft input</div>
+    </div>
+
+    <div class="cols-3">
+      <div>
+        <h4>01 — Hydraulic ram cylinder</h4>
+        <p class="small">Heavy-wall double-acting cylinder. Full force through the entire 1100&nbsp;mm stroke. Keep the rod film-oiled; never paint, scratch or strike it.</p>
+
+        <h4>02 — Hydraulic hose loops</h4>
+        <p class="small">High-pressure hoses feeding the cylinder from the valve. Inspect for chafing, kinks, blisters or seepage at every pre-start (see &sect;&nbsp;09).</p>
+
+        <h4>03 — 3-pt hitch top mount</h4>
+        <p class="small">Top-link attachment point at the top of the mast. Use the tractor's top link to set the beam plumb (vertical) before operating.</p>
+
+        <h4>04 — Splitting wedge</h4>
+        <p class="small">Hardened steel cleaver, ~250&nbsp;mm tall. Inspect for cracks, rolled edges or embedded fragments weekly.</p>
+    </div>
+
+      <div>
+        <h4>05 — Two-hand control levers</h4>
+        <p class="small">Both hands must remain on the levers throughout each stroke. Releasing either lever stops the ram and returns the wedge to the upper limit.</p>
+
+        <h4>06 — Manual log lift arm</h4>
+        <p class="small">Hinged hand-operated arm with cradle. Roll a heavy round onto the cradle, then lever the arm up to tip the log onto the splitting bed. No hydraulic assist (see §&nbsp;14).</p>
+
+        <h4>07 — Splash guard / shield</h4>
+        <p class="small">Sheet-steel shield around the splitting envelope. Deflects bark, splinters and chips away from the operator. Must remain bolted in place.</p>
+
+        <h4>08 — Splitting bed / base plate</h4>
+        <p class="small">Heavy steel base plate on which the log sits. Keep the surface clear of bark, off-cuts and stones — anything trapped here will deflect the split.</p>
+      </div>
+
+      <div>
+        <h4>09 — Transport wheel</h4>
+        <p class="small"><strong>For yard movement only.</strong> Not road-legal. Never tow the splitter behind a vehicle on its transport wheel(s) at any speed.</p>
+
+        <h4>10 — PTO shaft input</h4>
+        <p class="small">1⅜″ × 6-spline input flange driving the on-board gear pump. Use only the new PTO shaft supplied — it is length-matched to this implement.</p>
+
+        <h4>— Gear pump &amp; oil tank (internal)</h4>
+        <p class="small">Two-stage gear pump and ~30&nbsp;L hydraulic reservoir, housed within the yellow column. Sight gauge and filler cap accessed from the side panel.</p>
+
+        <h4>— Safety decals</h4>
+        <p class="small">Located adjacent to each hazard (see &sect;&nbsp;05). Replace any decal that is missing, faded or unreadable before continuing to operate.</p>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Component identification &middot; § 04</span>
+      <span class="pg">04 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 05 — DECALS & HAZARD SYMBOLS
+       ================================================================= -->
+  <section class="page" data-screen-label="05 Decals">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 05</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 05 — Decals &amp; hazard symbols</div>
+    <h2>What the labels on the machine mean.</h2>
+    <p class="small">Each decal carries a single message. Learn them before operating. <strong>Replace any decal that is missing, faded, scratched off, painted over or otherwise unreadable</strong> — operating without intact decals is prohibited.</p>
+
+    <div class="symbol-grid" style="margin-top: 5mm;">
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="!"></span></div>
+        <div class="meta"><h4>Read the manual</h4><p>Read and understand the operator's manual before assembly, operation, service or transport. Re-read after any extended period of non-use.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="✋"></span></div>
+        <div class="meta"><h4>Crush — keep hands clear</h4><p>The wedge and ram exert 30 tonnes of force. Hands or arms placed inside the work envelope will be amputated or crushed.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="↻"></span></div>
+        <div class="meta"><h4>Rotating PTO — entanglement</h4><p>The PTO shaft spins at 540 rpm. Clothing, hair or limbs caught will not stop the shaft. Guard must be in place and chained at both ends.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="≋"></span></div>
+        <div class="meta"><h4>High-pressure fluid</h4><p>Pin-hole hydraulic leaks inject fluid through skin. <strong>Never check for leaks by hand</strong> — use cardboard. Seek medical help within one hour.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="🎧"></span></div>
+        <div class="meta"><h4>Wear hearing protection</h4><p>Continuous PTO operation can exceed 85&nbsp;dB(A) at the operator. Use ear defenders rated ≥ SNR 25.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph tri"><span class="triangle" data-mark="👁"></span></div>
+        <div class="meta"><h4>Wear eye protection</h4><p>Splitting can throw bark, knots and splinters at high velocity. Use side-shielded safety glasses or full-face visor.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph no">✋</div>
+        <div class="meta"><h4>No second operator</h4><p>Only ONE person may operate this splitter. A second person holding or steadying the log will be injured — use the log lift instead.</p></div>
+      </div>
+
+      <div class="sym">
+        <div class="glyph no">🚸</div>
+        <div class="meta"><h4>No bystanders within 5 m</h4><p>Children, pets and bystanders must be kept at least <strong>5&nbsp;metres</strong> from the splitter while the PTO is engaged.</p></div>
+      </div>
+
+    </div>
+
+    <div class="page-foot">
+      <span>Decals &middot; § 05</span>
+      <span class="pg">05 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 06 — PPE
+       ================================================================= -->
+  <section class="page" data-screen-label="06 PPE">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 06</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 06 — Personal protective equipment</div>
+    <h2>Required PPE — every shift, no exceptions.</h2>
+    <p class="lede">The operator must wear all of the items below from the moment the tractor is started until the PTO is fully disengaged and the engine is off.</p>
+
+    <div class="ppe">
+      <div class="ppe-item">
+        <div class="num">01</div>
+        <div>
+          <div class="lbl">Eye protection</div>
+          <div class="desc">Side-shielded safety glasses to EN&nbsp;166-F minimum. Full-face visor preferred when splitting old or knotty timber.</div>
+        </div>
+      </div>
+      <div class="ppe-item">
+        <div class="num">02</div>
+        <div>
+          <div class="lbl">Hearing protection</div>
+          <div class="desc">Ear defenders or plugs rated ≥&nbsp;SNR&nbsp;25 / 25&nbsp;dB. Required for continuous use as PTO noise readily exceeds 85&nbsp;dB(A).</div>
+        </div>
+      </div>
+      <div class="ppe-item">
+        <div class="num">03</div>
+        <div>
+          <div class="lbl">Steel-toe boots</div>
+          <div class="desc">EN ISO&nbsp;20345 S3 or equivalent. Falling rounds and split halves frequently land near the foot well.</div>
+        </div>
+      </div>
+      <div class="ppe-item">
+        <div class="num">04</div>
+        <div>
+          <div class="lbl">Tight-fitting gloves</div>
+          <div class="desc">No loose cuffs, no draw-strings. Cut-resistant grade. Remove gloves entirely before approaching the PTO shaft for any reason.</div>
+        </div>
+      </div>
+      <div class="ppe-item">
+        <div class="num">05</div>
+        <div>
+          <div class="lbl">Close-fitting clothing</div>
+          <div class="desc">No loose sleeves, scarves, hoodies with strings, jewellery or watches. Long hair must be tied back and under a hat.</div>
+        </div>
+      </div>
+      <div class="ppe-item">
+        <div class="num">06</div>
+        <div>
+          <div class="lbl">Head protection</div>
+          <div class="desc">EN&nbsp;397 helmet when splitting overhead-stored rounds or when working in proximity to other tree work.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 7mm;">Items that must NOT be worn</h3>
+    <div class="cols-2">
+      <ul class="tight small">
+        <li>Rings, bracelets, necklaces, watches, lanyards.</li>
+        <li>Loose hi-vis vests with open back panels.</li>
+        <li>Scarves, neckerchiefs or untucked shirts.</li>
+        <li>Gloves with elasticated or flared cuffs near the PTO.</li>
+      </ul>
+      <ul class="tight small">
+        <li>Frayed work clothing — change before starting.</li>
+        <li>Tie-strings, lanyards on ear defenders that hang loose.</li>
+        <li>Tool belts with hanging tools when near the PTO shaft.</li>
+        <li>Open-toe footwear or wellingtons without steel toecaps.</li>
+      </ul>
+    </div>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body">
+        <p><strong>Entanglement is the single most common cause of fatal injury on PTO-driven implements.</strong> Most fatalities involve loose clothing, hair or a glove cuff. Once contact is made with a 540 rpm shaft, the operator cannot pull free.</p>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>PPE &middot; § 06</span>
+      <span class="pg">06 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 07 — GENERAL SAFETY
+       ================================================================= -->
+  <section class="page" data-screen-label="07 General Safety">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 07</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 07 — General safety rules</div>
+    <h2>The non-negotiables.</h2>
+
+    <div class="alert danger">
+      <div class="signal"><span class="icon">▲</span><span>Danger</span></div>
+      <div class="body">
+        <p><strong>One operator only.</strong> A second person never assists with loading, steadying or releasing a stuck log while the PTO is turning. Disengage the PTO and stop the tractor engine before any second person enters the work area.</p>
+      </div>
+    </div>
+
+    <h3>Operator readiness</h3>
+    <ul class="check">
+      <li>The operator is over 18, trained on this specific machine, and physically capable of lifting and turning logs of the size to be split.</li>
+      <li>The operator is not fatigued, ill, or under the influence of alcohol, prescription sedatives or recreational drugs.</li>
+      <li>The operator has read this manual in full and can demonstrate the location of every control without searching.</li>
+      <li>A second responsible adult is within shouting distance — not in the work area — in case of emergency.</li>
+      <li>A charged mobile phone is on the operator's person, not in a bag in the cab.</li>
+      <li>A basic first-aid kit and an eye-wash bottle are within 10&nbsp;m of the splitter.</li>
+    </ul>
+
+    <h3>Work area</h3>
+    <div class="cols-2">
+      <ul class="check">
+        <li>Level, dry, firm ground. No slope greater than 5°.</li>
+        <li>Daylight or equivalent task lighting; no shadows over the wedge.</li>
+        <li>No bystanders, children, pets or livestock within 5 m.</li>
+        <li>Splitting area cleared of stones, off-cuts and previous split halves.</li>
+      </ul>
+      <ul class="check">
+        <li>Outdoors only — never operate in an enclosed space (tractor exhaust contains carbon monoxide).</li>
+        <li>Tractor handbrake fully applied; wheels chocked if on any incline.</li>
+        <li>Tractor in neutral, gearbox in park where fitted, PTO disengaged before mounting / dismounting.</li>
+        <li>Fire extinguisher (≥ 2&nbsp;kg dry-powder or CO₂) within reach.</li>
+      </ul>
+    </div>
+
+    <h3>Conduct during splitting</h3>
+    <ul class="tight small">
+      <li><strong>Hands never enter the working envelope of the wedge.</strong> Reposition the log only with the ram fully retracted and the control released.</li>
+      <li><strong>Fingers away from any crack that opens in the log as it splits.</strong> A crack that opens under the wedge can close again the instant the wood gives — it will pinch or amputate fingers without warning.</li>
+      <li>Never reach across or over the beam while the ram is moving.</li>
+      <li>Never strike, hammer or use a bar to free a stuck log while the ram is under load — release pressure first.</li>
+      <li>One log at a time. Never split two logs stacked together.</li>
+      <li>Do not leave the splitter unattended with the PTO running, even for a moment.</li>
+      <li>Do not adjust any pressure-relief or directional valve. Factory settings are for the safe operating envelope.</li>
+      <li>If anything sounds, smells or feels wrong — stop. Disengage PTO. Investigate with the tractor engine off.</li>
+    </ul>
+
+    <div class="alert caution">
+      <div class="signal"><span class="icon">▲</span><span>Caution</span></div>
+      <div class="body">
+        <p>Hydraulic oil reaches working temperatures of 60&nbsp;°C and above in normal use. Do not touch hoses, fittings or the cylinder body bare-handed after extended operation.</p>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>General safety &middot; § 07</span>
+      <span class="pg">07 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 08 — PTO ENTANGLEMENT
+       ================================================================= -->
+  <section class="page" data-screen-label="08 PTO Safety">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 08</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 08 — PTO shaft &amp; entanglement</div>
+    <h2>The 540 rpm rule.</h2>
+    <p class="lede">A PTO shaft turning at 540 rpm rotates nine times every second. In the time it takes you to recognise that a sleeve has touched the shaft, more than half a metre of clothing has already been wound on. There is no version of this where you pull free.</p>
+
+    <div class="alert danger">
+      <div class="signal"><span class="icon">▲</span><span>Danger</span></div>
+      <div class="body">
+        <p><strong>Never approach a rotating PTO shaft for any reason.</strong> Disengage the PTO, stop the tractor engine, remove the key, and wait for all rotation to stop completely before crossing within reach of the shaft.</p>
+      </div>
+    </div>
+
+    <h3>Before connecting the PTO shaft</h3>
+    <ol class="tight small">
+      <li>Confirm the tractor PTO is <strong>540 rpm</strong> and that the stub is a 1⅜″ 6-spline. Do not use 1000 rpm PTOs on this machine.</li>
+      <li>Inspect the supplied PTO shaft end-to-end. Both guard tubes must rotate freely on their bearings. Both restraint chains must be present and uncut.</li>
+      <li>Confirm the integral shear-bolt / over-run clutch is fitted at the implement end (orange-banded yoke). This protects against shock loads when a log binds.</li>
+      <li>Measure shaft length at the tractor's minimum and maximum 3-pt heights. The shaft must <strong>never</strong> bottom-out under any geometry; nor must engagement length drop below ⅓ of the inner tube at maximum stretch.</li>
+      <li>Grease both U-joints, the centre slide, and both guard bearings before first use and every 8&nbsp;hours of operation thereafter.</li>
+    </ol>
+
+    <h3>During use</h3>
+    <ul class="tight small">
+      <li>Both guard chains must be anchored — one to the tractor, one to the splitter. The chains stop the guard tubes spinning with the shaft.</li>
+      <li>The maximum permissible U-joint angle is <strong>25°</strong>. If your hitched angle exceeds this, raise or lower the implement; do not run at high angles — it shortens shaft life and increases entanglement risk through vibration.</li>
+      <li>Do not step over a rotating shaft. Walk around the tractor instead.</li>
+      <li>Listen for unusual knocking or vibration; both indicate misalignment or wear and require immediate shutdown.</li>
+    </ul>
+
+    <h3>When disconnecting</h3>
+    <ol class="tight small">
+      <li>Disengage PTO at the tractor.</li>
+      <li>Shut off the tractor engine and remove the ignition key.</li>
+      <li>Wait at least 30 seconds for all rotation to cease and residual hydraulic pressure to bleed.</li>
+      <li>Disconnect the shaft at the tractor end first, then the implement end. Support the shaft on the cradle provided — never let it drop onto the drawbar.</li>
+    </ol>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body">
+        <p>If a guard tube is missing, broken, melted, or fails to rotate freely on its bearings, <strong>the implement is unsafe to operate.</strong> Replace before any further use. Do not improvise with tape, cable ties or wire.</p>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>PTO entanglement &middot; § 08</span>
+      <span class="pg">08 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 09 — HYDRAULIC SAFETY / INJECTION
+       ================================================================= -->
+  <section class="page" data-screen-label="09 Hydraulic Safety">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 09</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 09 — Hydraulic safety &amp; injection injury</div>
+    <h2>What "250 bar" really means for your skin.</h2>
+    <p class="lede">
+      The splitter's hydraulic system reaches working pressures of around 250&nbsp;bar
+      (≈&nbsp;3,600&nbsp;psi). A pin-hole leak at that pressure produces an invisible jet
+      of oil that will pass through clothing, skin and tendons without you feeling
+      more than a brief sting. The injury <strong>looks trivial and is catastrophic.</strong>
+    </p>
+
+    <div class="alert danger">
+      <div class="signal"><span class="icon">▲</span><span>Danger</span></div>
+      <div class="body">
+        <p><strong>Hydraulic fluid injection is a surgical emergency.</strong> If oil enters skin — even through a tiny pin-hole and even if the entry wound is barely visible — go directly to A&amp;E. Tell the clinician it is a <em>high-pressure oil injection injury</em>. Time to debridement governs whether the limb is saved.</p>
+      </div>
+    </div>
+
+    <h3>Leak-checking — the cardboard rule</h3>
+    <p class="small">Never check for leaks with your hand, your finger, or by feeling along a hose. Use a piece of stiff cardboard, held with both hands kept well clear, and pass it slowly along the suspect run. Stop the system and depressurise before doing this.</p>
+    <ul class="tight small">
+      <li>Look for oil <em>spray</em> staining the cardboard rather than drips.</li>
+      <li>Look for damp patches, glossy weeping along seam joints, or oil mist around fittings.</li>
+      <li>A whistling or hissing sound near a hose is a high-pressure leak — stop immediately.</li>
+    </ul>
+
+    <h3>Before opening any fitting</h3>
+    <ol class="tight small">
+      <li>Disengage the PTO.</li>
+      <li>Stop the tractor engine and remove the key.</li>
+      <li>With the engine off, work the control lever back and forth several times to bleed any trapped pressure to the reservoir.</li>
+      <li>Wait two minutes for any residual cylinder pressure to settle.</li>
+      <li>Loosen fittings slowly, with a rag, away from your face.</li>
+    </ol>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body">
+        <p><strong>Never remove the hydraulic tank filler cap with the system pressurised or running.</strong> The reservoir can hold hot oil under residual pressure — opening it during operation will spray hot oil across the operator. Shut down, wait five minutes, then vent.</p>
+      </div>
+    </div>
+
+    <h3>Things you must not adjust</h3>
+    <ul class="tight small">
+      <li>The main pressure-relief valve. Factory-set; resealable only by an authorised service technician.</li>
+      <li>The two-stage pump's transfer pressure setting.</li>
+      <li>The auto-return detent travel on the control valve.</li>
+    </ul>
+    <p class="small"><em>Increasing pressure beyond design will not split harder logs — it will burst a hose, fail a fitting or fracture the cylinder weld. Logs that won't split at 30 t need cross-cutting first.</em></p>
+
+    <div class="page-foot">
+      <span>Hydraulic safety &middot; § 09</span>
+      <span class="pg">09 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 10 — WORK ZONES
+       ================================================================= -->
+  <section class="page" data-screen-label="10 Work Zones">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 10</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 10 — Work area &amp; operating zones</div>
+    <h2>Where the operator stands. Where nobody else stands.</h2>
+
+    <div class="cols-asym">
+      <div>
+        <div class="zone-diagram">
+          <div class="center-mark">SPLITTER<br/>&amp; OPERATOR</div>
+          <div class="zone-label danger" style="left: 50%; top: 4mm; transform: translateX(-50%);"><span class="n">A</span>Crush zone — 1 m</div>
+          <div class="zone-label warning" style="left: 6mm; top: 50%; transform: translateY(-50%);"><span class="n">B</span>Operator only · 2 m</div>
+          <div class="zone-label caution" style="right: 6mm; top: 50%; transform: translateY(-50%);"><span class="n">C</span>Reception · 3 m</div>
+          <div class="zone-label safety" style="left: 50%; bottom: 4mm; transform: translateX(-50%);"><span class="n">D</span>Bystander limit · 5 m</div>
+        </div>
+
+        <p class="small" style="margin-top: 4mm;">
+          The diagram above shows a four-zone "onion" around the splitter. While
+          the PTO is engaged, only the trained operator may stand within zones A
+          and B. A reception zone (C) is where split firewood may be carried to a
+          stacking spot. Beyond zone D, bystanders, helpers and any animal must
+          remain at all times.
+        </p>
+      </div>
+
+      <div>
+        <h4>Zone A — Crush envelope (1 m)</h4>
+        <p class="small">Volume swept by the ram and wedge. Hands and arms never enter zone A while the control valve is energised. Reposition logs only with the ram retracted to its limit-stop and the lever centred.</p>
+
+        <h4>Zone B — Operator station (2 m)</h4>
+        <p class="small">The operator's working stance. Two-hand controls are reachable only from this station. Keep this zone clear of loose off-cuts that could roll under your feet.</p>
+
+        <h4>Zone C — Reception (3 m)</h4>
+        <p class="small">Where split halves naturally fall and are collected. Walk around — never reach across the beam — to retrieve wood from this zone. Best practice: split, retract, then collect.</p>
+
+        <h4>Zone D — Bystander limit (5 m)</h4>
+        <p class="small">No person other than the operator may cross zone D while the PTO is running. If someone needs to approach, disengage PTO, idle the tractor down, and make eye contact before they cross.</p>
+
+        <div class="alert notice">
+          <div class="signal"><span class="icon">i</span><span>Notice</span></div>
+          <div class="body small">
+            When working in poor visibility (dusk, light rain, snow flurry) double
+            zone D to 10&nbsp;m and add a hi-vis cone or marker at the perimeter.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Work zones &middot; § 10</span>
+      <span class="pg">10 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 11 — PRE-START INSPECTION
+       ================================================================= -->
+  <section class="page" data-screen-label="11 Pre-Start">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 11</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 11 — Pre-start inspection</div>
+    <h2>Walk-around before every session.</h2>
+    <p class="small">Carry out this inspection with the splitter unhitched or with the tractor engine off. Allow no fewer than three minutes. If any item fails, correct it before continuing — do not "make-do".</p>
+
+    <div class="cols-2" style="margin-top: 4mm;">
+      <div>
+        <h4>Structure</h4>
+        <ul class="check">
+          <li>Frame, beam and wedge free of cracks, deformation or weld failures.</li>
+          <li>All bolts and nuts present and torqued; no missing fasteners.</li>
+          <li>Guards in place over PTO input flange and pump coupling.</li>
+          <li>All decals legible — replace any that aren't.</li>
+        </ul>
+
+        <h4>Hydraulics</h4>
+        <ul class="check">
+          <li>Ram fully retracted (wedge at upper limit-stop) <strong>before</strong> reading the oil level — if the ram is extended, oil sits in the cylinder and the gauge reads low.</li>
+          <li>Oil checked <strong>cold</strong>, on level ground, for a consistent reading.</li>
+          <li>Sight gauge reads between MIN and MAX — roughly ¾ up the glass.</li>
+          <li>Filler cap breather hole clear; if a separate bleed screw is fitted on top of the tank, loosen ¼-turn before operation so the tank can breathe.</li>
+          <li>No oil stains, drips or weeping at hoses, fittings, valve, cylinder.</li>
+          <li>Hoses free of chafing, bulges, cracks or kinks.</li>
+          <li>Control levers return to centre under spring; two-hand engage tested.</li>
+          <li>Cylinder rod clean and lightly oiled — no rust, no nicks, no embedded grit.</li>
+        </ul>
+
+        <h4>Wedge &amp; beam</h4>
+        <ul class="check">
+          <li>Wedge edge sound — no chips deeper than 3 mm.</li>
+          <li>Beam slide-way clean and lightly greased.</li>
+          <li>Stroke limiter free to slide and lock.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>PTO shaft</h4>
+        <ul class="check">
+          <li>Both guard tubes rotate freely on bearings.</li>
+          <li>Both restraint chains present, sound, and long enough to attach.</li>
+          <li>U-joints free, no excessive play, no missing grease nipples.</li>
+          <li>Shear-bolt clutch (orange band) intact at implement end.</li>
+        </ul>
+
+        <h4>Log lift arm</h4>
+        <ul class="check">
+          <li>Pivot pin and R-clip in place; no cracks at the weld.</li>
+          <li>Arm swings freely through its full travel — no binding or sticking.</li>
+          <li>Cradle locks in upright rest position to serve as second guard rail.</li>
+        </ul>
+
+        <h4>Wheels &amp; hitch</h4>
+        <ul class="check">
+          <li>Transport wheels inflated; tyres free of cuts and rim corrosion.</li>
+          <li>CAT 1 pins present, retained by lynch-pins or R-clips.</li>
+          <li>Top-link mount free of cracks; correct top-link supplied by tractor end.</li>
+        </ul>
+
+        <h4>Site &amp; weather</h4>
+        <ul class="check">
+          <li>Ground level, dry, firm. Slope &lt; 5°.</li>
+          <li>No standing water under the splitter.</li>
+          <li>Visibility adequate.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert caution">
+      <div class="signal"><span class="icon">▲</span><span>Caution</span></div>
+      <div class="body small">
+        A single missing R-clip on a CAT&nbsp;1 pin can let the splitter walk off the lift arms under vibration. Carry spare R-clips and lynch-pins in the tractor cab.
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Pre-start &middot; § 11</span>
+      <span class="pg">11 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 12 — HITCHING & PTO CONNECTION
+       ================================================================= -->
+  <section class="page" data-screen-label="12 Hitching">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 12</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 12 — Hitching &amp; PTO connection</div>
+    <h2>Connecting the splitter to the tractor.</h2>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body small">
+        Hitching is the moment most struck-by and crush injuries occur. Work alone, slowly, and with the tractor's PTO disengaged. Never stand between the tractor and a moving splitter.
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <div class="step-title">Position the tractor</div>
+        <div class="step-body">
+          Reverse the tractor squarely up to the splitter so the lift arms line up
+          with the CAT&nbsp;1 lower pins. Stop with at least 200&nbsp;mm clearance,
+          apply handbrake, knock gear into neutral, disengage PTO, then shut off
+          the engine and remove the key before dismounting.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Fit lower link arms</div>
+        <div class="step-body">
+          Lift each lower arm onto its CAT&nbsp;1 pin in turn. Insert lynch-pin or
+          R-clip and confirm it is fully home. Adjust check-chains/stabilisers so
+          the splitter cannot swing more than 25&nbsp;mm side-to-side.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Fit the top link</div>
+        <div class="step-body">
+          Connect the tractor's top link to the splitter's mast. Adjust length
+          so the beam stands plumb (vertical) when the lift arms are at a normal
+          working height — typically 150–250&nbsp;mm above ground.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Fit the supplied PTO shaft</div>
+        <div class="step-body">
+          With both ends of the shaft cleaned of debris, fit the shear-bolt /
+          orange-banded end to the implement input first, then the plain yoke
+          to the tractor stub. Confirm both quick-release collars / push-pin
+          locks have clicked home — pull on each yoke to verify.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Anchor the guard chains</div>
+        <div class="step-body">
+          Hook one restraint chain to a solid point on the tractor (not a moving
+          part) and the other to the splitter mast. Chains should be just slack
+          enough to allow full articulation but not loose enough to flop into the
+          shaft.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">First-engage check</div>
+        <div class="step-body">
+          With the area clear, start the tractor, raise idle to ~1000 rpm,
+          engage the PTO briefly (≤ 3 s) and listen. No knocking, no vibration,
+          no leaks. Disengage. Inspect for any signs of stress at hoses or pump
+          coupling.
+        </div>
+      </li>
+    </ol>
+
+    <div class="page-foot">
+      <span>Hitching &middot; § 12</span>
+      <span class="pg">12 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 13 — OPERATING PROCEDURE
+       ================================================================= -->
+  <section class="page" data-screen-label="13 Operating Procedure">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 13</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 13 — Operating procedure</div>
+    <h2>Splitting a log — the standard cycle.</h2>
+
+    <ol class="steps">
+      <li>
+        <div class="step-title">Bring tractor to 540 rpm PTO speed</div>
+        <div class="step-body">
+          With PTO disengaged, set engine speed to the marked 540&nbsp;rpm position
+          on the tractor's tachometer (typically green-banded). Engage PTO at
+          low engine rpm to limit shock on the shaft, then bring engine speed to
+          the working setting.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Confirm operator stance &amp; zone clearance</div>
+        <div class="step-body">
+          Take up position at the two-hand control valve, facing the beam. Both
+          feet on solid ground, shoulder-width apart. Confirm Zone D (5&nbsp;m)
+          is clear of people and pets before each log.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Load the log onto the bed</div>
+        <div class="step-body">
+          <p>Stand the log on the base plate with its <strong>flat, square-cut end down</strong>, leaning lightly against the column. A wonky or angled cut face will tip or kick the log out under load.</p>
+          <p>Position the log so the wedge will come down through the centre, <strong>splitting along the grain — from top to bottom, never across it.</strong> For logs under ~25&nbsp;kg, place directly on the bed. For anything heavier, use the manual log lift arm (see &sect;&nbsp;14). One log at a time — never stack two logs to split together.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Initiate split — two-hand control (ZHB)</div>
+        <div class="step-body">
+          <p>With both hands on the control levers, push <strong>both levers down together</strong>. The wedge descends onto the log. Maintain pressure on both levers throughout each stroke — releasing either one stops the ram instantly and the spring-loaded valve returns to neutral.</p>
+          <p>The European-standard two-hand control (ZHB) exists for one reason: both your hands are occupied by the levers, so neither hand can be near the wedge while it is moving. <strong>Never tie down, weight or otherwise defeat a lever.</strong></p>
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Complete the split</div>
+        <div class="step-body">
+          Allow the wedge to travel fully through the log. The two halves will
+          fall to either side of the wedge — do not attempt to catch them. If
+          the wedge stalls, release both controls, retract fully, rotate the log
+          90° and try a different grain angle.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Retract — hands-free auto-return</div>
+        <div class="step-body">
+          To return the wedge, push <strong>both levers fully up into the detent</strong>. The valve locks in the retract position and the ram travels back to the upper limit-stop without operator input. The detent kicks out automatically when the ram reaches the top — you do not need to hold the levers during retraction.
+        </div>
+      </li>
+      <li>
+        <div class="step-title">Reset for next log</div>
+        <div class="step-body">
+          Wait for the ram to reach its rest position before approaching the bed. Clear split halves into the reception zone <strong>before</strong> loading the next log — never reach across the beam while another half could still be balanced on the bed.
+        </div>
+      </li>
+    </ol>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body small">
+        <strong>Never try to "force" a stubborn log.</strong> Holding the control under stall builds heat and stress in the hydraulics. After 5 s of no progress, release, retract, rotate the log, and try again. Knotty or stringy hardwood may need to be cross-cut shorter.
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Operating procedure &middot; § 13</span>
+      <span class="pg">13 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 14 — LOG LIFT & LOG HANDLING
+       ================================================================= -->
+  <section class="page" data-screen-label="14 Log Lift">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 14</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 14 — Log lift arm &amp; log handling</div>
+    <h2>Roll. Don't lift. Save your back.</h2>
+    <p class="lede">
+      The manual log lift arm exists so the operator never has to deadlift a heavy
+      round onto the bed. For anything above 25&nbsp;kg, use of the lift arm is
+      mandatory. When stowed upright against the beam, the arm locks in place
+      and acts as a secondary guard rail along the operator's working side.
+    </p>
+
+    <div class="cols-asym">
+      <div>
+        <h3>Log lift arm — loading sequence</h3>
+        <ol class="steps">
+          <li>
+            <div class="step-title">Lower the arm to the ground</div>
+            <div class="step-body">With the splitter PTO disengaged, swing the lift arm down so the cradle sits flat on the ground beside the splitting bed. Verify there is no gap between cradle and bed that a log could roll into.</div>
+          </li>
+          <li>
+            <div class="step-title">Roll the log onto the cradle</div>
+            <div class="step-body">Stand to the side — never directly in line with a rolling log. Use a peavey or cant-hook if the log is over 60&nbsp;cm in diameter. The log must rest with its centre of gravity over the cradle, not overhanging either end.</div>
+          </li>
+          <li>
+            <div class="step-title">Lever the arm up to bed height</div>
+            <div class="step-body">Grip the handle with both hands, brace your legs (not your back), and lever the arm up in one smooth motion. The cradle tips the log onto the splitting bed. Do not jerk — a snatched lift can tip the log past the bed and onto your feet.</div>
+          </li>
+          <li>
+            <div class="step-title">Park the arm clear of the wedge</div>
+            <div class="step-body">Lower the arm back to its ground rest before initiating the split — the wedge must never contact the cradle. Alternatively, lock the arm in its upright stowed position so it acts as a side guard.</div>
+          </li>
+        </ol>
+      </div>
+
+      <div>
+        <h3>Choosing logs</h3>
+        <ul class="tight small">
+          <li>Cross-cut to length first. Logs over 110&nbsp;cm <strong>will not fit</strong> and will jam the ram.</li>
+          <li>Cut both ends as square as practical. Skewed faces let the log walk under the wedge.</li>
+          <li>Reject logs with embedded metal (fence wire, old spikes). One impact will destroy the wedge.</li>
+          <li>Frozen logs may shatter under load — leave to thaw before splitting.</li>
+          <li>Old, dry knot-heavy hardwoods may exceed 30&nbsp;t requirement. Cross-cut shorter before re-attempting.</li>
+        </ul>
+
+        <h3>Stuck logs &amp; over-runs</h3>
+        <p class="small">If a log binds on the wedge so that the ram cannot retract:</p>
+        <ol class="tight small">
+          <li>Release both controls. The detent should return the ram.</li>
+          <li>If the ram does not retract, switch the valve to manual return and ease back slowly.</li>
+          <li>If the log is still stuck on the wedge, disengage PTO, shut down the tractor, then work the log free with a sledge from the side — never from in front of the wedge.</li>
+          <li>Inspect the wedge after any binding event for cracks before resuming.</li>
+        </ol>
+
+        <div class="alert caution">
+          <div class="signal"><span class="icon">▲</span><span>Caution</span></div>
+          <div class="body small">
+            Never use the log lift arm as a step or a place to set tools. The arm pivots freely and will swing under you. Lift with your legs, not your back — for any log you cannot comfortably lever, cross-cut it shorter first.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Log lift &middot; § 14</span>
+      <span class="pg">14 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 15 — SHUTDOWN
+       ================================================================= -->
+  <section class="page" data-screen-label="15 Shutdown">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 15</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 15 — Shutdown &amp; disconnection</div>
+    <h2>How to leave the machine safely.</h2>
+
+    <ol class="steps">
+      <li>
+        <div class="step-title">Retract the ram fully</div>
+        <div class="step-body">Bring the wedge back to its upper limit-stop. Cylinder retracted reduces seal exposure to weather and prevents accidental contact with the wedge edge.</div>
+      </li>
+      <li>
+        <div class="step-title">Park the log lift arm</div>
+        <div class="step-body">Lower the arm to its ground rest, or lock it in the upright stowed position. Do not leave the arm hanging mid-travel — it can swing and strike the operator on the next approach.</div>
+      </li>
+      <li>
+        <div class="step-title">Disengage PTO</div>
+        <div class="step-body">Drop tractor revs to idle, then disengage PTO. Allow the PTO shaft to coast to a stop visually before approaching.</div>
+      </li>
+      <li>
+        <div class="step-title">Shut down the tractor</div>
+        <div class="step-body">Apply parking brake, place gear lever in park / neutral, switch off and remove the key. Keep the key on your person — not in the cab.</div>
+      </li>
+      <li>
+        <div class="step-title">Bleed residual pressure</div>
+        <div class="step-body">With the engine off, cycle the control lever back and forth several times to bleed trapped hydraulic pressure.</div>
+      </li>
+      <li>
+        <div class="step-title">Disconnect the PTO shaft</div>
+        <div class="step-body">Release the tractor end first, then the implement end. Place the shaft on the cradle / hook provided. Do not let it drop.</div>
+      </li>
+      <li>
+        <div class="step-title">Inspect &amp; clean</div>
+        <div class="step-body">Walk around the splitter. Look for leaks. Brush off bark and chips from the beam, wedge and pump area. <strong>Wipe the cylinder rod clean</strong> with a soft cloth to keep grit out of the seals. If a tank bleed screw was loosened before use, retighten it now before transport or storage. Verify the filler cap is finger-tight.</div>
+      </li>
+    </ol>
+
+    <div class="alert notice">
+      <div class="signal"><span class="icon">i</span><span>Notice</span></div>
+      <div class="body small">
+        If the splitter will be left hitched to the tractor between shifts, also chock the tractor's drive wheels and leave the wedge fully retracted. If unhitched, lower the splitter onto its parking feet on firm ground — do not rest the weight on the transport wheels alone.
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Shutdown &middot; § 15</span>
+      <span class="pg">15 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 16 — TRANSPORT
+       ================================================================= -->
+  <section class="page" data-screen-label="16 Transport">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 16</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 16 — Transport &amp; movement</div>
+    <h2>Three ways to move the splitter. One way is on the road.</h2>
+
+    <div class="cols-3">
+      <div>
+        <h4>① Hitched to the tractor</h4>
+        <p class="small">For yard, field and short on-property moves. PTO shaft disconnected and stowed; cylinder fully retracted; log lift arm locked in the upright stowed position; tractor lift arms set to a stable carry height (just enough to clear the ground).</p>
+        <ul class="tight small">
+          <li>Walking pace on rough ground.</li>
+          <li>Wide swing-out — the splitter projects rear-ward; allow extra room for gates.</li>
+          <li>Do not lift the splitter beyond the height the tractor can carry without lifting its own front wheels.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>② On the transport wheels</h4>
+        <p class="small">For short, low-speed moves around the yard <em>by hand or with a small mover</em> only. The wheels are not towing wheels — they exist so one person can roll the machine clear of a workspace.</p>
+        <div class="alert danger" style="margin-top: 2mm;">
+          <div class="signal"><span class="icon">▲</span><span>Danger</span></div>
+          <div class="body small">
+            The transport wheels are <strong>not road-legal</strong> and have no braked towing rating. Never tow this splitter behind any vehicle on public or private roads.
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>③ Loaded onto a trailer</h4>
+        <p class="small">For inter-site travel. Use a flat-bed trailer rated for ≥&nbsp;500&nbsp;kg; secure with at least four ratchet straps to anchor points on the base frame — not on hoses, the cylinder, or the PTO input flange.</p>
+        <ul class="tight small">
+          <li>Cylinder fully retracted; lift cradle locked up.</li>
+          <li>PTO shaft removed and stowed separately.</li>
+          <li>Wedge area blocked with timber so the beam cannot shift.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Loading / unloading from a trailer</h3>
+    <ol class="tight small">
+      <li>Load on level ground only. Use ramps rated ≥ 750 kg, with non-slip surface, secured to the trailer.</li>
+      <li>Approach in a straight line. Never reverse a hitched splitter up a ramp.</li>
+      <li>When pushing or rolling on transport wheels, push from the lift mast — not from a hose or guard.</li>
+      <li>Strap the splitter immediately. Do not move the tractor away while the splitter is on the trailer but unstrapped.</li>
+    </ol>
+
+    <div class="alert warning">
+      <div class="signal"><span class="icon">▲</span><span>Warning</span></div>
+      <div class="body small">
+        The splitter's centre of mass sits high — the vertical beam dominates the weight distribution. Take corners slowly when hitched, and always re-check strap tension after the first 5&nbsp;km on a trailer.
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Transport &middot; § 16</span>
+      <span class="pg">16 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 17 — MAINTENANCE SCHEDULE
+       ================================================================= -->
+  <section class="page" data-screen-label="17 Maintenance">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 17</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 17 — Maintenance schedule</div>
+    <h2>Keep it running. Keep it safe.</h2>
+
+    <table class="trouble" style="margin-top: 4mm;">
+      <thead>
+        <tr><th>Interval</th><th>Task</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Before each use</td>
+          <td>Full pre-start walk-around (§&nbsp;11).</td>
+          <td>Sign off on the daily checklist (§&nbsp;20).</td>
+        </tr>
+        <tr>
+          <td>After each use</td>
+          <td>Brush off bark &amp; chips. Wipe cylinder rod clean. Retract ram, lock lift arm.</td>
+          <td>Wipe wedge with light oil if storing outdoors.</td>
+        </tr>
+        <tr>
+          <td>Every 8 hours</td>
+          <td>Grease PTO U-joints, slide profile, guard bearings.</td>
+          <td>Use lithium-complex EP2 grease. 2–3 strokes per nipple.</td>
+        </tr>
+        <tr>
+          <td>Every 8 hours</td>
+          <td>Grease cylinder pins, lift-arm pivot, valve linkages.</td>
+          <td>Wipe excess to prevent dirt accumulation.</td>
+        </tr>
+        <tr>
+          <td>Every 40 hours</td>
+          <td>Check all bolts to torque. Inspect hoses for chafing.</td>
+          <td>Pay special attention to pump-coupling bolts.</td>
+        </tr>
+        <tr>
+          <td>Every 50 hours</td>
+          <td>Replace hydraulic return-line filter element.</td>
+          <td>OEM element only. Record date on filter housing.</td>
+        </tr>
+        <tr>
+          <td>Every 100 hours</td>
+          <td>Inspect wedge edge; dress or replace as required.</td>
+          <td>Hard-facing should be done by a qualified welder only.</td>
+        </tr>
+        <tr>
+          <td>Every 100 hours / annually</td>
+          <td>Drain &amp; replace hydraulic oil. Clean reservoir interior.</td>
+          <td>Approx. 30&nbsp;L AW-46 / HLP&nbsp;46. Replace breather and suction strainer.</td>
+        </tr>
+        <tr>
+          <td>Every 500 hours</td>
+          <td>Workshop service: pump output, cylinder seals, PTO shaft.</td>
+          <td>By qualified hydraulic technician only.</td>
+        </tr>
+        <tr>
+          <td>Before winter storage</td>
+          <td>Full grease-down; cover cylinder rod; bleed pressure.</td>
+          <td>Store indoors if possible; if outdoors, fully covered.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert notice" style="margin-top: 4mm;">
+      <div class="signal"><span class="icon">i</span><span>Notice</span></div>
+      <div class="body small">
+        All intervals are <strong>whichever comes first</strong> — hours of operation or calendar time. Record completed services in the maintenance log at the back of this manual.
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Maintenance schedule &middot; § 17</span>
+      <span class="pg">17 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 18 — HYDRAULIC SERVICE
+       ================================================================= -->
+  <section class="page" data-screen-label="18 Hydraulic Service">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 18</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 18 — Hydraulic system service</div>
+    <h2>Oil, filters, and the rules of thumb.</h2>
+
+    <div class="cols-2">
+      <div>
+        <h4>Oil specification</h4>
+        <table class="spec">
+          <tr><th>Grade</th><td class="val">ISO VG 46 anti-wear<br/>(HLP&nbsp;46 / AW-46)</td></tr>
+          <tr><th>Cold-climate alternative</th><td class="val">ISO VG 32 / AW-32</td></tr>
+          <tr><th>Viscosity @ 40 °C</th><td class="val">46 cSt (32 cSt for AW-32)</td></tr>
+          <tr><th>Anti-wear additive</th><td class="val">Required — Zn-based, &gt; 350 mg/kg</td></tr>
+          <tr><th>Pour point</th><td class="val">≤ −24 °C</td></tr>
+          <tr><th>Reservoir capacity</th><td class="val">≈ 30 L</td></tr>
+          <tr><th>Cold start range</th><td class="val">−10 °C to +5 °C: cycle slowly for 5 min</td></tr>
+        </table>
+
+        <p class="small" style="margin-top: 3mm;">
+          For UK use, <strong>AW-46 / HLP&nbsp;46</strong> is the recommended
+          all-round grade — it works through temperate and warm conditions and
+          is the most widely stocked from agricultural and engineering oil
+          suppliers (Granville, Millers, Morris's, Comma, Carlube and similar).
+          AW-32 is a thinner grade suitable only for sub-zero winter operation.
+          <strong>Never mix grades</strong> — drain and refill if changing.
+        </p>
+
+        <h4>Oil change — procedure</h4>
+        <ol class="tight small">
+          <li>Operate splitter under no load for 5 min to warm the oil to ≈ 40 °C.</li>
+          <li>Shut down per §&nbsp;15. Wait 10 min for any pressure to bleed.</li>
+          <li>Place a 35 L drain pan under the reservoir.</li>
+          <li>Remove the magnetic drain plug. Capture and inspect debris on the magnet — heavy ferrous material indicates pump wear; consult a service technician.</li>
+          <li>Clean reservoir interior with a lint-free rag. Do not use solvents.</li>
+          <li>Replace suction strainer and return filter elements.</li>
+          <li>Refill via the filler cap until the sight gauge reads between MIN and MAX, cold.</li>
+          <li>Re-start, cycle ram fully ten times to bleed air, recheck level.</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Symptoms of hydraulic trouble</h4>
+        <ul class="tight small">
+          <li><strong>Foaming oil in sight gauge:</strong> air ingress on the suction side, low oil, or wrong-grade oil.</li>
+          <li><strong>Slow or weak ram:</strong> low oil, worn pump, dirty filter, leaking cylinder seal, or pressure-relief stuck open.</li>
+          <li><strong>Whining pump:</strong> air entrainment or cavitation — stop and check oil level immediately.</li>
+          <li><strong>Hot reservoir (&gt; 70 °C):</strong> excessive sustained relief-valve operation (forcing stuck logs), or low oil. Stop and let cool.</li>
+          <li><strong>Jerky ram movement:</strong> air in the cylinder; cycle ten times to bleed.</li>
+          <li><strong>Visible oil mist around a hose:</strong> stop immediately. Pin-hole leak — see §&nbsp;09.</li>
+        </ul>
+
+        <div class="alert danger" style="margin-top: 3mm;">
+          <div class="signal"><span class="icon">▲</span><span>Danger</span></div>
+          <div class="body small">
+            <strong>Never weld, drill, grind or flame-cut on the cylinder, reservoir or any pressurised component.</strong> Trapped vapour and oil residue ignite. Repairs to pressurised components are workshop work only.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Disposal</h3>
+    <p class="small">Used hydraulic oil is a controlled waste. Drain into sealed containers and dispose of through a licensed waste oil collector. Do not pour onto ground, into drains, or burn in an open fire. Capture and recycle used filter elements in the same way.</p>
+
+    <div class="page-foot">
+      <span>Hydraulic service &middot; § 18</span>
+      <span class="pg">18 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 19 — TROUBLESHOOTING
+       ================================================================= -->
+  <section class="page" data-screen-label="19 Troubleshooting">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 19</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 19 — Troubleshooting</div>
+    <h2>If something isn't right.</h2>
+    <p class="small">Always disengage PTO and stop the tractor engine before investigating. The table below covers the common faults — anything not listed, or any fault you cannot resolve in one step, calls a service technician.</p>
+
+    <table class="trouble">
+      <thead>
+        <tr><th>Symptom</th><th>Likely cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ram won't advance</td>
+          <td>PTO not engaged; low oil; relief valve stuck open; control valve in neutral detent only.</td>
+          <td>Re-engage PTO at low rpm. Check oil. Cycle control twice. If unresolved, call service.</td>
+        </tr>
+        <tr>
+          <td>Ram advances but won't split</td>
+          <td>Knotty/cross-grained log, frozen wood, or under-spec PTO rpm.</td>
+          <td>Retract, rotate log 90°, retry. Cross-cut shorter. Confirm tractor at 540 rpm.</td>
+        </tr>
+        <tr>
+          <td>Ram slow or weak</td>
+          <td>Low PTO rpm; cold oil; clogged filter; worn pump.</td>
+          <td>Raise rpm to 540. Allow 5-min warm-up. Check filter age. Service pump if persistent.</td>
+        </tr>
+        <tr>
+          <td>Pump whining or screaming</td>
+          <td>Air on suction side, low oil, blocked strainer.</td>
+          <td>Stop immediately. Check oil level. Inspect suction line and strainer.</td>
+        </tr>
+        <tr>
+          <td>Oil hot, foaming in gauge</td>
+          <td>Wrong oil grade, low level, excessive relief-valve dumping under stalled load.</td>
+          <td>Stop. Allow to cool. Confirm HLP 46. Stop forcing stuck logs — see §&nbsp;14.</td>
+        </tr>
+        <tr>
+          <td>PTO shaft vibrates / knocks</td>
+          <td>Excessive U-joint angle, worn cross, dry slide, mis-fitted yokes.</td>
+          <td>Shut down. Inspect U-joints. Reduce articulation angle below 25°.</td>
+        </tr>
+        <tr>
+          <td>Hydraulic oil mist or seep</td>
+          <td>Pin-hole leak, loose fitting, perished seal.</td>
+          <td><strong>Stop. Do not touch. See §&nbsp;09.</strong> Cardboard-test only after depressurise.</td>
+        </tr>
+        <tr>
+          <td>Wedge chipped or rolled edge</td>
+          <td>Embedded metal in log; foreign object; over-load.</td>
+          <td>Cease use. Inspect for cracks. Re-dress or replace before resuming.</td>
+        </tr>
+        <tr>
+          <td>Lift arm hard to lever / binding</td>
+          <td>Pivot dry; bent arm or worn bush; log overhanging cradle.</td>
+          <td>Grease pivot. Inspect arm for distortion. Re-position log so its CoG sits over the cradle.</td>
+        </tr>
+        <tr>
+          <td>Tractor stalls under split</td>
+          <td>Tractor under-powered for log size; PTO not at 540 rpm; clutch slipping.</td>
+          <td>Cross-cut log shorter. Confirm rpm. Service tractor clutch if recurring.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="page-foot">
+      <span>Troubleshooting &middot; § 19</span>
+      <span class="pg">19 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 20 — DAILY CHECKLIST
+       ================================================================= -->
+  <section class="page" data-screen-label="20 Daily Checklist">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 20</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 20 — Daily pre-start checklist</div>
+    <h2>Tick every box before the PTO turns.</h2>
+
+    <div class="checklist">
+      <h4>Section A — Operator &amp; site</h4>
+      <div class="checklist-row"><div class="box"></div><div>Operator trained on this machine, rested, sober, fit to work.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>PPE worn: eye, ear, steel-toe boots, close-fitting clothing, tight gloves.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Ground level, dry, firm; slope &lt; 5°; zone D (5&nbsp;m) clear.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>First-aid kit, eye wash and mobile phone on site.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Fire extinguisher within reach; ignition sources removed.</div><div class="note">Initial</div></div>
+    </div>
+
+    <div class="checklist" style="margin-top: 5mm;">
+      <h4>Section B — Machine</h4>
+      <div class="checklist-row"><div class="box"></div><div>Walk-around done — frame, beam, wedge, decals all sound.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Oil level between MIN/MAX cold; no leaks anywhere.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>PTO shaft guards rotate freely; both restraint chains attached.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>3-pt CAT 1 pins R-clipped; check-chains/stabilisers set.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Log lift arm swings freely; pivot pin retained; locks in upright position.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Control valve returns to centre under spring; two-hand engage tested.</div><div class="note">Initial</div></div>
+      <div class="checklist-row"><div class="box"></div><div>Brief PTO test at low rpm — no knocking, no leaks, no vibration.</div><div class="note">Initial</div></div>
+    </div>
+
+    <div class="signoff">
+      <div>
+        <div class="field"></div>
+        <div class="lbl">Operator name</div>
+      </div>
+      <div>
+        <div class="field"></div>
+        <div class="lbl">Signature</div>
+      </div>
+      <div>
+        <div class="field"></div>
+        <div class="lbl">Date &amp; time</div>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Daily checklist &middot; § 20</span>
+      <span class="pg">20 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 21 — OPERATOR SIGN-OFF / TRAINING RECORD
+       ================================================================= -->
+  <section class="page" data-screen-label="21 Sign-Off">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 21</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 21 — Operator briefing &amp; sign-off</div>
+    <h2>Authorisation to operate.</h2>
+    <p class="small">By signing below, the operator confirms that they have read this manual, received a practical briefing covering each section, and demonstrated competent operation of the controls under supervision before being authorised to operate the Raptor&nbsp;X 30T splitter unsupervised.</p>
+
+    <h3>Topics covered during briefing</h3>
+    <div class="cols-2">
+      <ul class="check">
+        <li>Document conventions and signal words (§&nbsp;02).</li>
+        <li>Specification, intended use and prohibited use (§&nbsp;03).</li>
+        <li>Component identification on the physical machine (§&nbsp;04).</li>
+        <li>Decals and what each one means (§&nbsp;05).</li>
+        <li>PPE selection and fitting (§&nbsp;06).</li>
+        <li>General safety and conduct (§&nbsp;07).</li>
+      </ul>
+      <ul class="check">
+        <li>PTO entanglement and the 540 rpm rule (§&nbsp;08).</li>
+        <li>Hydraulic injection injury &amp; emergency response (§&nbsp;09).</li>
+        <li>Work zones A–D and bystander limit (§&nbsp;10).</li>
+        <li>Pre-start, hitching, operating, lift arm, shutdown (§§&nbsp;11–15).</li>
+        <li>Transport rules and what is <em>not</em> road-legal (§&nbsp;16).</li>
+        <li>Maintenance schedule and oil change basics (§§&nbsp;17–18).</li>
+      </ul>
+    </div>
+
+    <h3>Operators authorised to use this machine</h3>
+    <table class="trouble" style="font-size: 9pt;">
+      <thead>
+        <tr><th style="width:30%">Operator name</th><th style="width:18%">Date briefed</th><th style="width:22%">Briefed by</th><th>Signature</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="height: 10mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 10mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 10mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 10mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 10mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Maintenance log</h3>
+    <table class="trouble" style="font-size: 9pt;">
+      <thead>
+        <tr><th style="width:14%">Date</th><th style="width:14%">Hours</th><th>Work carried out</th><th style="width:22%">Performed by</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="height: 8mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 8mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 8mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td style="height: 8mm;">&nbsp;</td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="page-foot">
+      <span>Operator sign-off &middot; § 21</span>
+      <span class="pg">21 / 22</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PAGE 22 — TEAR-OFF QUICK REFERENCE
+       ================================================================= -->
+  <section class="page" data-screen-label="22 Quick Reference">
+    <div class="watermark"><span>DRAFT</span></div>
+    <div class="page-head">
+      <div class="brand">RAPTOR<span class="dot"></span>X &middot; 30T Vertical Splitter</div>
+      <div class="ref">RX-30T-OM-001 · Rev A · § 22</div>
+    </div>
+
+    <div class="eyebrow"><span class="bar"></span>Section 22 — Tear-off quick reference</div>
+    <h2>Keep this near the machine.</h2>
+
+    <div class="card-tear" style="margin-top: 6mm;">
+      <div class="cols-2">
+        <div>
+          <h3 style="margin-top: 0;">START-UP — IN ORDER</h3>
+          <ol class="tight small">
+            <li>PPE on. Site cleared. Zone D (5&nbsp;m).</li>
+            <li>Splitter hitched, R-clipped, PTO shaft fitted and chained.</li>
+            <li>Cylinder retracted. Lift arm parked at ground rest.</li>
+            <li>Tractor in neutral, handbrake on, engine started.</li>
+            <li>Engine to 540&nbsp;rpm PTO mark.</li>
+            <li>Engage PTO at low rpm, then bring up engine speed.</li>
+            <li>Both hands on the control. Begin splitting.</li>
+          </ol>
+
+          <h3>SHUTDOWN — IN ORDER</h3>
+          <ol class="tight small">
+            <li>Ram fully retracted. Lift arm down or locked upright.</li>
+            <li>Engine to idle. Disengage PTO.</li>
+            <li>Engine off. Key out. In your pocket.</li>
+            <li>Cycle control to bleed pressure.</li>
+            <li>Disconnect PTO shaft — tractor end first.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3 style="margin-top: 0;">IF SOMETHING'S WRONG</h3>
+          <ul class="tight small">
+            <li><strong>Oil mist or seep:</strong> stop. §&nbsp;09. Cardboard-test only.</li>
+            <li><strong>PTO knocking / vibrating:</strong> stop. Reduce angle.</li>
+            <li><strong>Stuck log:</strong> release, retract, rotate 90°, retry. After 5 s of stall — stop, cross-cut shorter.</li>
+            <li><strong>Whining pump:</strong> stop. Check oil immediately.</li>
+            <li><strong>Hot reservoir:</strong> stop, cool down, check load profile.</li>
+          </ul>
+
+          <h3>NEVER</h3>
+          <ul class="tight small">
+            <li>Allow a second person to assist with loading while PTO turning.</li>
+            <li>Reach across or over the beam while ram is moving.</li>
+            <li>Check leaks by hand.</li>
+            <li>Remove the filler cap while running.</li>
+            <li>Tow on the transport wheels.</li>
+            <li>Adjust the pressure-relief valve.</li>
+          </ul>
+
+          <h3>EMERGENCY — INJECTION INJURY</h3>
+          <p class="small" style="margin: 0;">
+            Go directly to A&amp;E. Tell the clinician: <em>"High-pressure
+            hydraulic oil injection injury."</em> Take this manual. Time to
+            surgical debridement governs outcome.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols-3" style="margin-top: 6mm;">
+      <div>
+        <h4>Specification at a glance</h4>
+        <table class="spec">
+          <tr><th>Force</th><td>30 t</td></tr>
+          <tr><th>Max log</th><td>110 cm</td></tr>
+          <tr><th>PTO</th><td>540 rpm</td></tr>
+          <tr><th>Min tractor</th><td>35 hp</td></tr>
+          <tr><th>Oil</th><td>HLP 46, 30 L</td></tr>
+          <tr><th>Hitch</th><td>CAT 1</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4>Greasing — every 8 h</h4>
+        <ul class="tight small">
+          <li>PTO U-joints (×2)</li>
+          <li>PTO slide profile</li>
+          <li>Guard tube bearings (×2)</li>
+          <li>Cylinder pins (×2)</li>
+          <li>Lift-arm pivot</li>
+          <li>Valve linkages</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Document</h4>
+        <p class="mono tiny">
+          DOC&nbsp;&nbsp;&nbsp;RX-30T-OM-001<br/>
+          REV&nbsp;&nbsp;&nbsp;A<br/>
+          DATE&nbsp;&nbsp;05/2026<br/>
+          LANG&nbsp;&nbsp;EN-GB<br/>
+          NORM&nbsp;&nbsp;EN&nbsp;609-1 principles<br/>
+          MODEL&nbsp;Raptor&nbsp;X 30T<br/>
+          SERIAL ____________
+        </p>
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>Tear-off quick reference &middot; § 22</span>
+      <span class="pg">22 / 22</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- ====================== TWEAKS DEFAULTS ====================== -->
+<script>
+  window.__TWEAKS_DEFAULTS__ = /*EDITMODE-BEGIN*/{
+    "accentHex": "#d9531e",
+    "density": "regular",
+    "watermark": false
+  }/*EDITMODE-END*/;
+</script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<script type="text/babel">
+  const { useEffect } = React;
+
+  function ManualTweaks() {
+    const [t, setTweak] = useTweaks(window.__TWEAKS_DEFAULTS__);
+
+    useEffect(() => {
+      const body = document.body;
+      const map = { '#d9531e': 'orange', '#e6a800': 'yellow', '#0067b1': 'blue', '#c8102e': 'red' };
+      const name = map[t.accentHex] || 'orange';
+      body.classList.remove('accent-orange','accent-yellow','accent-blue','accent-red');
+      body.classList.add('accent-' + name);
+      body.classList.toggle('density-compact', t.density === 'compact');
+      body.classList.toggle('watermarked', !!t.watermark);
+    }, [t.accentHex, t.density, t.watermark]);
+
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Accent">
+          <TweakColor
+            label="Document accent"
+            value={t.accentHex}
+            options={['#d9531e', '#e6a800', '#0067b1', '#c8102e']}
+            onChange={(v) => setTweak('accentHex', v)}
+          />
+        </TweakSection>
+
+        <TweakSection label="Layout">
+          <TweakRadio
+            label="Page density"
+            value={t.density}
+            options={[
+              { value: 'regular', label: 'Regular' },
+              { value: 'compact', label: 'Compact' }
+            ]}
+            onChange={(v) => setTweak('density', v)}
+          />
+          <TweakToggle
+            label='Show "DRAFT" watermark'
+            value={t.watermark}
+            onChange={(v) => setTweak('watermark', v)}
+          />
+        </TweakSection>
+
+        <TweakSection label="Output">
+          <TweakButton onClick={() => window.print()}>Print / Save as PDF</TweakButton>
+        </TweakSection>
+      </TweaksPanel>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<ManualTweaks />);
+</script>
+
+<script>
+  // ============== Brand-mark "back to cover" link ==============
+  (function() {
+    document.querySelectorAll('.page-head .brand').forEach(el => {
+      const link = document.createElement('a');
+      link.className = 'brand';
+      link.href = '#sec-01-cover';
+      link.setAttribute('aria-label', 'Back to cover page');
+      link.setAttribute('title', 'Back to cover');
+      link.innerHTML = el.innerHTML;
+      el.replaceWith(link);
+      // page-head's flex layout expects this to be the first child — wrap to preserve
+    });
+  })();
+</script>
+
+<script>
+  // ============== Hamburger navigation ==============
+  (function() {
+    const pages = Array.from(document.querySelectorAll('section.page'));
+    const groups = [
+      { title: 'Orientation', range: [0, 4] },
+      { title: 'Safety', range: [4, 10] },
+      { title: 'Setup & Operation', range: [10, 15] },
+      { title: 'After Use', range: [15, 19] },
+      { title: 'Records', range: [19, 22] }
+    ];
+
+    pages.forEach((p, i) => {
+      if (!p.id) {
+        const label = (p.getAttribute('data-screen-label') || ('page-' + (i+1)))
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        p.id = 'sec-' + label;
+      }
+    });
+
+    const body = document.getElementById('nav-panel-body');
+    groups.forEach(group => {
+      const heading = document.createElement('div');
+      heading.className = 'nav-section';
+      heading.textContent = group.title;
+      body.appendChild(heading);
+      pages.slice(group.range[0], group.range[1]).forEach((p, idx) => {
+        const label = p.getAttribute('data-screen-label') || ('Page ' + (group.range[0] + idx + 1));
+        const parts = label.split(' ');
+        const num = parts.shift();
+        const a = document.createElement('a');
+        a.className = 'nav-link';
+        a.href = '#' + p.id;
+        a.innerHTML = '<span class="n"></span><span class="t"></span>';
+        a.querySelector('.n').textContent = num;
+        a.querySelector('.t').textContent = parts.join(' ');
+        a.addEventListener('click', closeNav);
+        body.appendChild(a);
+      });
+    });
+
+    const quickRef = pages[pages.length - 1];
+    if (quickRef) {
+      const a = document.createElement('a');
+      a.className = 'nav-link is-quickref';
+      a.href = '#' + quickRef.id;
+      a.innerHTML = '<span class="n">→</span><span class="t"></span>';
+      a.querySelector('.t').textContent = 'Tear-off quick reference';
+      a.addEventListener('click', closeNav);
+      body.appendChild(a);
+    }
+
+    const toggle = document.getElementById('nav-toggle');
+    const scrim = document.getElementById('nav-scrim');
+
+    function openNav() {
+      document.body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    function closeNav() {
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    toggle.addEventListener('click', () => {
+      if (document.body.classList.contains('nav-open')) closeNav();
+      else openNav();
+    });
+    scrim.addEventListener('click', closeNav);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeNav();
+    });
+  })();
+</script>
+
+</body>
+</html>
