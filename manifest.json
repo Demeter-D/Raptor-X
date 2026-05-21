@@ -1,0 +1,31 @@
+{
+  "name": "Raptor X 30T — Operator Manual",
+  "short_name": "Raptor X",
+  "description": "Operator safety briefing and instruction manual for the Raptor X 30-tonne vertical log splitter.",
+  "start_url": "https://demeter-d.github.io/Raptor-X/",
+  "scope": "https://demeter-d.github.io/Raptor-X/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f4ec",
+  "theme_color": "#1a1814",
+  "icons": [
+    {
+      "src": "https://demeter-d.github.io/Raptor-X/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://demeter-d.github.io/Raptor-X/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://demeter-d.github.io/Raptor-X/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
